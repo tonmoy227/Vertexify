@@ -1,41 +1,41 @@
 @font-face {
-    font-family: Test_Söhne_400;
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: url("../fonts/TestSöhne-Buch.otf") format("truetype")
+	font-family: Test_Söhne_400;
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url("../fonts/TestSöhne-Buch.otf") format("truetype")
 }
 
 @font-face {
-    font-family: Test_Söhne_italic_400;
-    font-style: italic;
-    font-weight: 400;
-    font-display: auto;
-    src: url("../fonts/TestSöhne-BuchKursiv.otf") format("truetype")
+	font-family: Test_Söhne_italic_400;
+	font-style: italic;
+	font-weight: 400;
+	font-display: auto;
+	src: url("../fonts/TestSöhne-BuchKursiv.otf") format("truetype")
 }
 
 @font-face {
-    font-family: Test_Söhne_500;
-    font-style: normal;
-    font-weight: 500;
-    font-display: auto;
-    src: url("../fonts/TestSöhne-Kräftig.otf") format("truetype")
+	font-family: Test_Söhne_500;
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: url("../fonts/TestSöhne-Kräftig.otf") format("truetype")
 }
 
 @font-face {
-    font-family: Test_Söhne_600;
-    font-style: normal;
-    font-weight: 600;
-    font-display: auto;
-    src: url("../fonts/TestSöhne-Halbfett.otf") format("truetype")
+	font-family: Test_Söhne_600;
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url("../fonts/TestSöhne-Halbfett.otf") format("truetype")
 }
 
 @font-face {
-    font-family: Test_Söhne_700;
-    font-style: normal;
-    font-weight: 700;
-    font-display: auto;
-    src: url("../fonts/TestSöhne-Dreiviertelfett.otf") format("truetype")
+	font-family: Test_Söhne_700;
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url("../fonts/TestSöhne-Dreiviertelfett.otf") format("truetype")
 }
 
 
@@ -233,6 +233,18 @@ select:visited {
 	list-style: none;
 	padding: 0;
 	z-index: 1;
+}
+.vt-btn {
+	a {
+		color: #C9F7CA;
+		font-weight: 500;
+		font-size: 	16px;
+		padding: 16px 20px;
+		letter-spacing: 1px;
+		display: inline-block;
+		font-family: Test_Söhne_500;
+		background-color: var(--vt-title-color);
+	}
 }
 // txa-common-css-start
 

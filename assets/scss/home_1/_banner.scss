@@ -1,0 +1,39 @@
+.vt-banner-text {
+	max-width: 520px;
+	padding-top: 245px;
+	.banner-slug {
+		line-height: 1;
+		font-size: 15px;
+		padding: 6px 20px;
+		position: relative;
+		margin-bottom: 16px;
+		display: inline-block;
+		background: linear-gradient(90deg, #DBF0FF 0%, #DFE2FF 50%, #F6DFFF 100%);
+		&:before,
+		&:after {
+			top: 12px;
+			width: 4px;
+			height: 4px;
+			content: '';
+			border-radius: 100%;
+			position: absolute;
+			background-color: var(--vt-title-color);
+		}
+		&:after {
+			right: 10px;
+		}
+		&:before {
+			left: 10px;
+		}
+	}
+	.banner_title {
+		line-height: 1;
+		font-size: 	64px;
+		letter-spacing: -2px;
+		color: var(--vt-title-color);
+	}
+	p {
+		padding-top: 25px;
+		padding-bottom: 32px;
+	}
+}
