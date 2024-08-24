@@ -2,13 +2,18 @@
 Font load
 ===========*/
 :root {
-	--art-body-color: #261723;
-	--art-heading: 'Clash Grotesk', sans-serif;
-	--art-heading-2: "Archivo", sans-serif;
-	--art-body-font: 'Clash Grotesk', sans-serif;
-	--art-body-font-2: "Archivo", sans-serif;
-	--art-base-color-1: #DE4A28;
-	--art-base-color-2: #A2A2FC;
+	--vt-gray: #E7E7E7;
+	--vt-body-color: #4F4F4F;
+	--vt-title-color: #101010;
+	--vt-heading: 'Test_Söhne_500';
+	--vt-body-font: 'Test_Söhne_400';
+	--vt-semibold: 'Test_Söhne_600';
+	--vt-base-color-1: #C9F7CA;
+	--vt-grandient-1: #DBF0FF;
+	--vt-grandient-2: #DFE2FF;
+	--vt-grandient-3: #F6DFFF;
+	--vt-gradient-color:  linear-gradient(90deg, var(--vt-grandient-1) 0%, var(--vt-grandient-2) 50%, var(--vt-grandient-3) 100%);
+  
 }
 // Responsive Variables
 $over:'(min-width: 1800px)';

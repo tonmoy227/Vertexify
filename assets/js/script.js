@@ -58,3 +58,4 @@ Background Image
 		$(this).css('background-image', 'url('+ $(this).attr('data-background') + ')');
 	});
 	
+})(jQuery);
