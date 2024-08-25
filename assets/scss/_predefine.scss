@@ -60,10 +60,13 @@ body {
 	-moz-osx-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased; 
 	.container {
-		max-width: 1250px;
+		max-width: 1240px;
 	}
 	.split-line {
 		overflow: hidden;
+	}
+	.row {
+		--bs-gutter-x: 32px;
 	}
 	.mfp-iframe-holder .mfp-close {
 		right: 0;
@@ -255,6 +258,7 @@ select:visited {
 		font-size: 15px;
 		padding: 6px 20px;
 		position: relative;
+		margin-bottom: 18px;
 		display: inline-block;
 		color: var(--vt-title-color);
 		background: var(--vt-gradient-color);
@@ -278,7 +282,17 @@ select:visited {
 	.section_title {
 		font-size: 45px;
 		font-weight: 500;
+		line-height: 1.0666;
 		color: var(--vt-title-color);
+		@media #{$md,$sm,$xs} {
+			font-size: 35px;
+		}
+		@media #{$xxs} {
+			font-size: 30px;
+		}
+	}
+	p {
+		padding-top: 25px;
 	}
 }
 // txa-common-css-start

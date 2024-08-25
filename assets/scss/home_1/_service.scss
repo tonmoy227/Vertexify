@@ -1,0 +1,31 @@
+.vt-service-section {
+	.vt-section-title {
+		max-width: 696px;
+	}
+}
+.vt-service-item {
+	margin-bottom: 32px;
+	padding: 48px 40px 75px;
+	background: linear-gradient(180deg, #CBF3CB 0%, #EDF3CB 100%);
+	.item-icon {
+		margin-bottom: 30px;
+	}
+	.item-text {
+		h3 {
+			font-size: 23px;
+			font-weight: 500;
+			line-height: 1.30;
+			padding-bottom: 15px;
+			color: var(--vt-title-color);
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+	&.ver_2 {
+		background: linear-gradient(180deg, #EFEBC2 0%, #FFD397 100%);
+	}
+	&.ver_3 {
+		background: linear-gradient(180deg, #CFE2FF 0%, #A4A7FE 100%);
+	}
+}
