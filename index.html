@@ -272,7 +272,156 @@
 		</div>
 	</section>
 <!-- End of About section
-	============================================= -->            
+	============================================= -->
+
+<!-- Start of Service section
+	============================================= -->
+	<section id="vt-service-2" class="vt-service-section-2 position-relative">
+		<div class="vt-service-content-2 position-relative">
+			<div class="vt-service-thumb swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="vt-service-title headline">
+							<h3><span>Strategic Planning</span></h3>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-title headline">
+							<h3><span>Financial Consulting</span></h3>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-title headline">
+							<h3><span>Operational Optimization</span></h3>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-title headline">
+							<h3><span>HR Development</span></h3>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-title headline">
+							<h3><span>Marketing Strategy</span></h3>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-title headline">
+							<h3><span>Technology Integration</span></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="vt-service-slider swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="vt-service-item-2 position-relative">
+							<div class="item-img">
+								<img src="assets/img/bg/ser_1.jpg" alt="">
+							</div>
+							<div class="container">
+								<div class="item-text">
+									<div class="vt-section-title headline pera-content">
+										<div class="subtitle">
+											We're Vertexify Consulting
+										</div>
+										<h2 class="section_title"><a href="#">Accelerate into the future.</a></h2>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-item-2 position-relative">
+							<div class="item-img">
+								<img src="assets/img/bg/ser_1.jpg" alt="">
+							</div>
+							<div class="container">
+								<div class="item-text">
+									<div class="vt-section-title headline pera-content">
+										<div class="subtitle">
+											We're Vertexify Consulting
+										</div>
+										<h2 class="section_title"><a href="#">Accelerate into the future.</a></h2>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-item-2 position-relative">
+							<div class="item-img">
+								<img src="assets/img/bg/ser_1.jpg" alt="">
+							</div>
+							<div class="container">
+								<div class="item-text">
+									<div class="vt-section-title headline pera-content">
+										<div class="subtitle">
+											We're Vertexify Consulting
+										</div>
+										<h2 class="section_title"><a href="#">Accelerate into the future.</a></h2>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-item-2 position-relative">
+							<div class="item-img">
+								<img src="assets/img/bg/ser_1.jpg" alt="">
+							</div>
+							<div class="container">
+								<div class="item-text">
+									<div class="vt-section-title headline pera-content">
+										<div class="subtitle">
+											We're Vertexify Consulting
+										</div>
+										<h2 class="section_title"><a href="#">Accelerate into the future.</a></h2>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-item-2 position-relative">
+							<div class="item-img">
+								<img src="assets/img/bg/ser_1.jpg" alt="">
+							</div>
+							<div class="container">
+								<div class="item-text">
+									<div class="vt-section-title headline pera-content">
+										<div class="subtitle">
+											We're Vertexify Consulting
+										</div>
+										<h2 class="section_title"><a href="#">Accelerate into the future.</a></h2>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="vt-service-item-2 position-relative">
+							<div class="item-img">
+								<img src="assets/img/bg/ser_1.jpg" alt="">
+							</div>
+							<div class="container">
+								<div class="item-text">
+									<div class="vt-section-title headline pera-content">
+										<div class="subtitle">
+											We're Vertexify Consulting
+										</div>
+										<h2 class="section_title"><a href="#">Accelerate into the future.</a></h2>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	            
+<!-- End of Service section
+	============================================= -->	
 
 
 
@@ -298,5 +447,24 @@
 	<script src="assets/js/ScrollTrigger.min.js"></script>
 	<script src="assets/js/SplitText.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script>
+		var swiper = new Swiper(".vt-service-thumb", {
+			spaceBetween: 0,
+			slidesPerView: 6,
+			freeMode: true,
+			direction: 'vertical',
+			watchSlidesProgress: true,
+		});
+		var swiper2 = new Swiper(".vt-service-slider", {
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			thumbs: {
+				swiper: swiper,
+			},
+		});
+	</script>
 </body>
 </html>  
