@@ -278,6 +278,7 @@
 	============================================= -->
 	<section id="vt-service-2" class="vt-service-section-2 position-relative">
 		<div class="vt-service-content-2 position-relative">
+			<div class="vt-service-pagination"></div>
 			<div class="vt-service-thumb swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -421,6 +422,55 @@
 		</div>
 	</section>	            
 <!-- End of Service section
+	============================================= -->
+
+<!-- Start of Client section
+	============================================= -->
+	<section id="vt-client" class="vt-client-section pt-120 pb-120">
+		<div class="container">
+			<div class="vt-section-title headline text-center pera-content">
+				<div class="subtitle">
+					Our Corporate Clients'
+				</div>
+				<h2 class="section_title">Satisfied clients from 170+ organisations in different fields</h2>
+			</div>
+			<div class="vt-client-content d-flex flex-wrap">
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+				<div class="vt-client-item d-flex justify-content-center align-items-center position-relative">
+					<img class="img_1" src="assets/img/partner/sp1.png" alt="">
+					<img class="img_2 position-absolute" src="assets/img/partner/sp1.1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>		
+<!-- End of Client section
 	============================================= -->	
 
 
@@ -454,6 +504,10 @@
 			freeMode: true,
 			direction: 'vertical',
 			watchSlidesProgress: true,
+			pagination: {
+				el: ".vt-service-pagination",
+				clickable: true,
+			},
 		});
 		var swiper2 = new Swiper(".vt-service-slider", {
 			spaceBetween: 10,
@@ -463,6 +517,10 @@
 			},
 			thumbs: {
 				swiper: swiper,
+			},
+			pagination: {
+				el: ".vt-service-pagination",
+				clickable: true,
 			},
 		});
 	</script>

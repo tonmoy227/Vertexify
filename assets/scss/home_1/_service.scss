@@ -34,6 +34,9 @@
 	z-index: 1;
 	height: 890px;
 	padding-top: 80px;
+	@media #{$md,$sm,$xs} {
+		height: 350px;
+	}
 	.item-img {
 		top: 0;
 		left: 0;
@@ -62,6 +65,9 @@
 			max-width: 495px;
 			.section_title {
 				font-size: 64px;
+				@media #{$sm,$xs} {
+					font-size: 45px;
+				}
 			}
 		}
 	}
@@ -73,6 +79,23 @@
 	height: 290px;
 	position: absolute;
 	max-height: 290px;
+	@media #{$xxxl} {
+		left: 15.5%;
+	}
+	@media #{$xxl} {
+		left: 12.5%;
+	}
+	@media #{$xl} {
+		left: 5%;
+	}
+	@media #{$lg} {
+		left: 15px;
+	}
+	@media #{$md,$sm,$xs} {
+		position: static;
+		padding-left: 15px;
+		margin-bottom: 40px;
+	}
 }
 .vt-service-title {
 	transition: all 500ms ease;
@@ -98,6 +121,9 @@
 				position: absolute;
 				transition: all 800ms ease;
 				background-color: var(--vt-title-color);
+				@media #{$sm,$xs} {
+					height: 2px;
+				}
 			}
 		}
 		&:before {
@@ -110,6 +136,7 @@
 			border-radius: 100%;
 			background-color: #5D5D5D;
 			transition: all 500ms ease;
+
 		}
 		
 	}
@@ -121,7 +148,6 @@
 	}
 }
 .swiper-slide-thumb-active {
-	
 	.vt-service-title {
 		padding-bottom: 20px;
 		h3 {
@@ -129,6 +155,9 @@
 			padding-left: 16px;
 			color: var(--vt-title-color);
 			font-family: var(--vt-heading);
+			@media #{$sm,$xs} {
+				font-size: 24px;
+			}
 			span {
 				&:after {
 					width: 100%;
@@ -139,7 +168,41 @@
 				top: 24px;
 				width: 8px;
 				height: 8px;
+				@media #{$sm,$xs} {
+					top: 10px;
+				}
 			}
 		}
 	}
+}
+.vt-service-pagination.swiper-pagination-vertical.swiper-pagination-bullets {
+	top: 50%;
+	left: 24px;
+	z-index: 2;
+	width: 22px;
+	right: auto;
+	bottom: auto;
+	padding: 6px 0px;
+	position: absolute;
+	text-align: center;
+	background-color: #fff;
+	transform: translateY(-50%);
+	@media #{$lg,$md,$sm,$xs} {
+		display: none;
+	}
+	 .swiper-pagination-bullet {
+	 	width: 8px;
+	 	opacity: 1;
+	 	height: 8px;
+	 	margin: 6px auto;
+	 	background-color: #D1D1D1;
+	 	transition: all 500ms ease;
+	 	border: 2px solid transparent;
+	 	&.swiper-pagination-bullet-active {
+	 		width: 12px;
+	 		height: 12px;
+	 		border: 2px solid #101010;
+	 		background-color: transparent;
+	 	}
+	 }
 }

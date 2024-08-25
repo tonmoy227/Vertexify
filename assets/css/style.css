@@ -2232,6 +2232,11 @@ select:visited {
   height: 890px;
   padding-top: 80px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-service-item-2 {
+    height: 350px;
+  }
+}
 .vt-service-item-2 .item-img {
   top: 0;
   left: 0;
@@ -2263,6 +2268,11 @@ select:visited {
 .vt-service-item-2 .item-text .vt-section-title .section_title {
   font-size: 64px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-service-item-2 .item-text .vt-section-title .section_title {
+    font-size: 45px;
+  }
+}
 
 .vt-service-thumb {
   z-index: 2;
@@ -2271,6 +2281,33 @@ select:visited {
   height: 290px;
   position: absolute;
   max-height: 290px;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .vt-service-thumb {
+    left: 15.5%;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .vt-service-thumb {
+    left: 12.5%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .vt-service-thumb {
+    left: 5%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .vt-service-thumb {
+    left: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-service-thumb {
+    position: static;
+    padding-left: 15px;
+    margin-bottom: 40px;
+  }
 }
 
 .vt-service-title {
@@ -2304,6 +2341,11 @@ select:visited {
   transition: all 800ms ease;
   background-color: var(--vt-title-color);
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-service-title h3 span:after {
+    height: 2px;
+  }
+}
 .vt-service-title h3:before {
   left: 0;
   top: 11px;
@@ -2335,6 +2377,11 @@ select:visited {
   color: var(--vt-title-color);
   font-family: var(--vt-heading);
 }
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .swiper-slide-thumb-active .vt-service-title h3 {
+    font-size: 24px;
+  }
+}
 .swiper-slide-thumb-active .vt-service-title h3 span:after {
   width: 100%;
   -webkit-transition-delay: 800ms;
@@ -2344,6 +2391,47 @@ select:visited {
   top: 24px;
   width: 8px;
   height: 8px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .swiper-slide-thumb-active .vt-service-title h3:before {
+    top: 10px;
+  }
+}
+
+.vt-service-pagination.swiper-pagination-vertical.swiper-pagination-bullets {
+  top: 50%;
+  left: 24px;
+  z-index: 2;
+  width: 22px;
+  right: auto;
+  bottom: auto;
+  padding: 6px 0px;
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-service-pagination.swiper-pagination-vertical.swiper-pagination-bullets {
+    display: none;
+  }
+}
+.vt-service-pagination.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 8px;
+  opacity: 1;
+  height: 8px;
+  margin: 6px auto;
+  background-color: #D1D1D1;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  border: 2px solid transparent;
+}
+.vt-service-pagination.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #101010;
+  background-color: transparent;
 }
 
 /*---------------------------------------------------- */
@@ -2443,6 +2531,25 @@ select:visited {
   .vt-counter-item p {
     font-size: 18px;
   }
+}
+
+/*---------------------------------------------------- */
+/*Client Section*/
+/*----------------------------------------------------*/
+.vt-client-section .vt-section-title {
+  margin: 0 auto;
+  max-width: 810px;
+}
+
+.vt-client-content {
+  margin-top: 50px;
+  border: 1px solid #F2F2F2;
+}
+
+.vt-client-item {
+  width: 25%;
+  height: 160px;
+  border: 1px solid #F2F2F2;
 }
 
 /*---------------------------------------------------- */
