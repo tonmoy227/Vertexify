@@ -1,6 +1,46 @@
+.vt-banner-section {
+	overflow: hidden;
+	.bt-banner-img {
+		width: 100%;
+		z-index: -1;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.vt-banner-shape {
+		right: 0;
+		bottom: 0px;
+		position: absolute;
+		@media #{$sm,$xs} {
+			display: none;
+		}
+	}
+	&:before {
+		left: 0;
+		top: 40px;
+		width: 100%;
+		content: '';
+		height: 200px;
+		position: absolute;
+		background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		@media #{$md,$sm,$xs} {
+			height: 100%;
+		}
+	}
+}
 .vt-banner-text {
+	z-index: 1;
 	max-width: 520px;
 	padding-top: 245px;
+	position: relative;
+	padding-bottom: 195px;
+	@media #{$xxs} {
+		padding-top: 180px;
+		padding-bottom: 100px;
+	}
 	.banner-slug {
 		line-height: 1;
 		font-size: 15px;
@@ -31,6 +71,12 @@
 		font-size: 	64px;
 		letter-spacing: -2px;
 		color: var(--vt-title-color);
+		@media #{$md} {
+			font-size: 55px;
+		}
+		@media #{$xs} {
+			font-size: 45px;
+		}
 	}
 	p {
 		padding-top: 25px;

@@ -244,6 +244,41 @@ select:visited {
 		display: inline-block;
 		font-family: Test_Söhne_500;
 		background-color: var(--vt-title-color);
+		@media #{$xxs} {
+			padding: 14px 18px;
+		}
+	}
+}
+.vt-section-title {
+	.subtitle {
+		line-height: 1;
+		font-size: 15px;
+		padding: 6px 20px;
+		position: relative;
+		display: inline-block;
+		color: var(--vt-title-color);
+		background: var(--vt-gradient-color);
+		&:before,
+		&:after {
+			top: 12px;
+			width: 4px;
+			height: 4px;
+			content: '';
+			border-radius: 100%;
+			position: absolute;
+			background-color: var(--vt-title-color);
+		}
+		&:after {
+			right: 10px;
+		}
+		&:before {
+			left: 10px;
+		}
+	}
+	.section_title {
+		font-size: 45px;
+		font-weight: 500;
+		color: var(--vt-title-color);
 	}
 }
 // txa-common-css-start

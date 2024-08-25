@@ -205,7 +205,11 @@
 	}
 	&.header_style_one {
 		.header-top-area {
+			background-color: #fff;
 			border-bottom: 1px solid #C9F7CA;
+			@media #{$md,$sm,$xs} {
+				display: none;
+			}
 			.header-top {
 				.top-cta {
 					i {
@@ -294,6 +298,9 @@
 		}
 		.vt-header-navigation {
 			.main-navigation {
+				@media #{$md,$sm,$xs} {
+					display: none;
+				}
 				li {
 					margin: 0px 16px;
 					position: relative;
@@ -342,12 +349,17 @@
 		}
 		.header-cta-btn {
 			margin-left: 20px;
+			@media #{$xxs} {
+				display: none;
+			}
 			a {
 				color: #C9F7CA;
 				font-size: 15px;
 				padding: 12px 22px;
+				white-space: nowrap;
 				font-family: var(--vt-heading);
 				background-color: var(--vt-title-color);
+				
 			}
 		}
 		.canvas-trigger {

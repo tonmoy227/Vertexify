@@ -244,7 +244,13 @@ Font load
           transform: translateY(-9px);
 }
 .vt-header-section.header_style_one .header-top-area {
+  background-color: #fff;
   border-bottom: 1px solid #C9F7CA;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-header-section.header_style_one .header-top-area {
+    display: none;
+  }
 }
 .vt-header-section.header_style_one .header-top-area .header-top .top-cta i {
   width: 32px;
@@ -350,6 +356,11 @@ Font load
 .vt-header-section.header_style_one .vt-header-navigation-content {
   padding: 20px 0px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-header-section.header_style_one .vt-header-navigation .main-navigation {
+    display: none;
+  }
+}
 .vt-header-section.header_style_one .vt-header-navigation .main-navigation li {
   margin: 0px 16px;
   position: relative;
@@ -392,10 +403,16 @@ Font load
 .vt-header-section.header_style_one .header-cta-btn {
   margin-left: 20px;
 }
+@media (max-width: 480px) {
+  .vt-header-section.header_style_one .header-cta-btn {
+    display: none;
+  }
+}
 .vt-header-section.header_style_one .header-cta-btn a {
   color: #C9F7CA;
   font-size: 15px;
   padding: 12px 22px;
+  white-space: nowrap;
   font-family: var(--vt-heading);
   background-color: var(--vt-title-color);
 }
@@ -657,6 +674,41 @@ select:visited {
   display: inline-block;
   font-family: Test_Söhne_500;
   background-color: var(--vt-title-color);
+}
+@media (max-width: 480px) {
+  .vt-btn a {
+    padding: 14px 18px;
+  }
+}
+
+.vt-section-title .subtitle {
+  line-height: 1;
+  font-size: 15px;
+  padding: 6px 20px;
+  position: relative;
+  display: inline-block;
+  color: var(--vt-title-color);
+  background: var(--vt-gradient-color);
+}
+.vt-section-title .subtitle:before, .vt-section-title .subtitle:after {
+  top: 12px;
+  width: 4px;
+  height: 4px;
+  content: "";
+  border-radius: 100%;
+  position: absolute;
+  background-color: var(--vt-title-color);
+}
+.vt-section-title .subtitle:after {
+  right: 10px;
+}
+.vt-section-title .subtitle:before {
+  left: 10px;
+}
+.vt-section-title .section_title {
+  font-size: 45px;
+  font-weight: 500;
+  color: var(--vt-title-color);
 }
 
 .mt-5 {
@@ -2023,9 +2075,58 @@ select:visited {
 /******* HOME PAGE 1 *******/
 /*Banner Section*/
 /*----------------------------------------------------*/
+.vt-banner-section {
+  overflow: hidden;
+}
+.vt-banner-section .bt-banner-img {
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+}
+.vt-banner-section .bt-banner-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.vt-banner-section .vt-banner-shape {
+  right: 0;
+  bottom: 0px;
+  position: absolute;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-banner-section .vt-banner-shape {
+    display: none;
+  }
+}
+.vt-banner-section:before {
+  left: 0;
+  top: 40px;
+  width: 100%;
+  content: "";
+  height: 200px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-banner-section:before {
+    height: 100%;
+  }
+}
+
 .vt-banner-text {
+  z-index: 1;
   max-width: 520px;
   padding-top: 245px;
+  position: relative;
+  padding-bottom: 195px;
+}
+@media (max-width: 480px) {
+  .vt-banner-text {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
 }
 .vt-banner-text .banner-slug {
   line-height: 1;
@@ -2058,11 +2159,24 @@ select:visited {
   letter-spacing: -2px;
   color: var(--vt-title-color);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .vt-banner-text .banner_title {
+    font-size: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .vt-banner-text .banner_title {
+    font-size: 45px;
+  }
+}
 .vt-banner-text p {
   padding-top: 25px;
   padding-bottom: 32px;
 }
 
+/*---------------------------------------------------- */
+/*Service Section*/
+/*----------------------------------------------------*/
 /*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
