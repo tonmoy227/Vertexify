@@ -2947,6 +2947,87 @@ select:visited {
 }
 
 /*---------------------------------------------------- */
+/*Why Choose Us Section*/
+/*----------------------------------------------------*/
+.vt-why-choose-section {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.vt-why-choose-content {
+  gap: 30px 72px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-why-choose-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 60px 15px;
+  }
+}
+
+.vt-why-choose-img {
+  width: 50%;
+  overflow: hidden;
+  max-height: 924px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-why-choose-img {
+    width: 100%;
+  }
+}
+.vt-why-choose-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vt-why-choose-text {
+  max-width: 540px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-why-choose-text {
+    max-width: 100%;
+  }
+}
+
+.vt-why-choose-ft-item-area {
+  padding-top: 50px;
+}
+
+.vt-why-choose-ft-item {
+  gap: 20px 24px;
+  margin-bottom: 38px;
+}
+@media (max-width: 480px) {
+  .vt-why-choose-ft-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.vt-why-choose-ft-item:last-child {
+  margin-bottom: 0;
+}
+.vt-why-choose-ft-item .item-text {
+  max-width: 470px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-why-choose-ft-item .item-text {
+    max-width: 100%;
+  }
+}
+.vt-why-choose-ft-item .item-text h3 {
+  font-size: 23px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: var(--vt-title-color);
+}
+.vt-why-choose-ft-item .item-text p {
+  color: #454545;
+  font-size: 18px;
+}
+
+/*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
 /*---------------------------------------------------- */
