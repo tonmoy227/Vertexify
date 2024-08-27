@@ -851,7 +851,7 @@
 				<h2 class="section_title">Press Releases Drive Success</h2>
 			</div>
 			<div class="vt-blog-content pt-50 justify-content-center">
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="col-lg-4 col-md-6">
 						<div class="vt-blog-item">
 							<div class="item-img">
@@ -895,7 +895,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="vt-btn mt-45 text-capitalize text-center">
+				<div class="vt-btn mt-15 text-capitalize text-center">
 					<a href="#">Browse All News</a>
 				</div>
 			</div>
@@ -1003,9 +1003,12 @@
 
 <!-- Start of Contact  section
 	============================================= -->
-	<section id="vt-contact" class="vt-contact-section">
+	<section id="vt-contact" class="vt-contact-section pt-120 pb-80 position-relative">
+		<div class="contact-img position-absolute">
+			<img src="assets/img/bg/contact.png" alt="">
+		</div>
 		<div class="container">
-			<div class="vt-contact-content">
+			<div class="vt-contact-content d-flex">
 				<div class="vt-contact-text-wrap">
 					<div class="vt-section-title headline pera-content">
 						<div class="subtitle">
@@ -1014,6 +1017,92 @@
 						<h2 class="section_title">Get in Touch with Us Today</h2>
 						<p>Our consulting services drive growth, optimize operations, and ensure strategic business success.</p>
 					</div>
+					<div class="vt-contact-partner pera-content">
+						<p>Used by leading brands and companies across the globe</p>
+						<div class="vt-contact-logo">
+							<div class="vt-contact-logo-slide swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="vt-contact-logo-img">
+											<img  src="assets/img/partner/sp8.png" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="vt-contact-logo-img">
+											<img  src="assets/img/partner/sp3.png" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="vt-contact-logo-img">
+											<img  src="assets/img/partner/sp4.png" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="vt-contact-logo-img">
+											<img  src="assets/img/partner/sp2.png" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="vt-contact-logo-img">
+											<img  src="assets/img/partner/sp1.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vt-contact-form headline pera-content">
+					<h3 class="wow" data-splitting="" >What can we help you with? </h3>
+					<div class="vt-contact-form-area">
+						<form action="#" method="post">
+							<div class="vt-contact-form-option">
+								<label class="contact-select">
+									<input type="radio" id="age1" name="age" value="">
+									<span>Strategic Planning</span>
+								</label>
+								<label class="contact-select">
+									<input type="radio" id="age2" name="age" value="">
+									<span>Financial Consulting</span>
+								</label> 
+								<label class="contact-select">
+									<input type="radio" id="age3" name="age" value="">
+									<span>Operational Optimization</span>
+								</label>
+								<label class="contact-select">
+									<input type="radio" id="age4" name="age" value="">
+									<span>HR Development</span>
+								</label>
+								<label class="contact-select">
+									<input type="radio" id="age5" name="age" value="">
+									<span>Marketing Strategy</span>
+								</label>
+								<label class="contact-select">
+									<input type="radio" id="age6" name="age" value="">
+									<span>Technology Integration</span>
+								</label>
+							</div>
+							<div class="vt-contact-form-input">
+								<div class="input-field">
+									<label class="text-uppercase">Name</label>
+									<input type="text" placeholder="e.g. Oliver Spiteri">
+								</div>
+								<div class="input-field">
+									<label class="text-uppercase">Phone</label>
+									<input type="text" placeholder="e.g. +1 877 217 8371">
+								</div>
+								<div class="input-field">
+									<label class="text-uppercase">Email</label>
+									<input type="text" placeholder="example@email.com">
+								</div>
+								<div class="input-field">
+									<label class="text-uppercase">Message</label>
+									<textarea name="message" id="text" placeholder="Write your message here..."></textarea>
+								</div>
+							</div>
+							<button>Submit NOw</button>
+						</form>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -1169,6 +1258,50 @@
 		$(document).on('click', '.vt-faq-item-area .accordion-item', function(){
 			$(this).addClass('faq_active').siblings().removeClass('faq_active')
 		});
+	</script>
+	<script>
+		if ($('.vt-contact-logo-slide').length > 0 ) {
+			var swiper2 = new Swiper(".vt-contact-logo-slide", {
+				loop: true,
+				speed: 1000,
+				slidesPerView: 3,
+				spaceBetween: 50,
+				roundLengths: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				breakpoints: {  
+					'1400': {
+						slidesPerView: 3,
+					},
+					'1300': {
+						slidesPerView: 3,
+					},
+					'1200': {
+						slidesPerView: 3,
+					},
+					'992': {
+						slidesPerView: 3,
+					},
+					'768': {
+						slidesPerView: 3,
+					},
+					'767': {
+						slidesPerView: 3 ,
+					},
+					'576': {
+						slidesPerView: 3,
+					},
+					'480': {
+						slidesPerView: 2,
+					},
+					'0': {
+						slidesPerView: 2,
+					},
+				},
+			});
+		};
 	</script>
 </body>
 </html>  

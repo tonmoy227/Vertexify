@@ -290,6 +290,7 @@ select:visited {
 		font-size: 45px;
 		font-weight: 500;
 		line-height: 1.0666;
+		letter-spacing: -2px;
 		color: var(--vt-title-color);
 		@media #{$md,$sm,$xs} {
 			font-size: 35px;
