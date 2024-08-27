@@ -3028,6 +3028,41 @@ select:visited {
 }
 
 /*---------------------------------------------------- */
+/*Blog Section*/
+/*----------------------------------------------------*/
+.vt-blog-section {
+  background-color: #E7E7E7;
+}
+
+.vt-blog-item {
+  max-width: 384px;
+}
+.vt-blog-item .item-img {
+  margin-bottom: 24px;
+}
+.vt-blog-item .item-text .item-tag {
+  margin-bottom: 18px;
+}
+.vt-blog-item .item-text .item-tag a {
+  display: block;
+  margin-bottom: 8px;
+}
+.vt-blog-item .item-text .item-tag a span {
+  padding: 8px 10px;
+  line-height: 1;
+  font-size: 15px;
+  display: inline-block;
+  background-color: #fff;
+  color: var(--vt-title-color);
+}
+.vt-blog-item .item-text .blog_title {
+  color: var(--vt-title-color);
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+/*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
 /*---------------------------------------------------- */
