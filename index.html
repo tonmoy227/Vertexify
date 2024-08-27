@@ -906,7 +906,7 @@
 
 <!-- Start of Faq  section
 	============================================= -->
-	<section id="vt-faq" class="vt-faq-section">
+	<section id="vt-faq" class="vt-faq-section pt-120 pb-200">
 		<div class="container">
 			<div class="vt-section-title headline text-center pera-content">
 				<div class="subtitle">
@@ -914,9 +914,111 @@
 				</div>
 				<h2 class="section_title">Answers to Common Corporate Business Questions</h2>
 			</div>
+			<div class="vt-faq-content">
+				<div class="vt-faq-item-area">
+					<div class="accordion" id="accordionExample_31">
+						<div class="accordion-item faq_active wow fadeInUp"  data-wow-delay="200ms" data-wow-duration="1000ms">
+							<h2 class="accordion-header" id="heading10">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
+									<span>	What is corporate business?</span>
+								</button>
+							</h2>
+							<div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10" data-bs-parent="#accordionExample_31">
+								<div class="accordion-body ">
+									<div class="bi-faq-text">
+										Corporate business refers to large-scale operations involving multiple stakeholders and structured governance for achieving specific business goals.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item wow fadeInUp"  data-wow-delay="300ms" data-wow-duration="1000ms">
+							<h2 class="accordion-header" id="heading12">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+									<span>How do corporate businesses differ from small businesses?</span>
+								</button>
+							</h2>
+							<div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample_31">
+								<div class="accordion-body ">
+									<div class="bi-faq-text">
+										Corporate business refers to large-scale operations involving multiple stakeholders and structured governance for achieving specific business goals.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item wow fadeInUp"  data-wow-delay="400ms" data-wow-duration="1000ms">
+							<h2 class="accordion-header" id="heading13">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+									<span>What are the key benefits of forming a corporate entity?</span>
+								</button>
+							</h2>
+							<div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample_31">
+								<div class="accordion-body ">
+									<div class="bi-faq-text">
+										Corporate business refers to large-scale operations involving multiple stakeholders and structured governance for achieving specific business goals.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item wow fadeInUp"  data-wow-delay="500ms" data-wow-duration="1000ms">
+							<h2 class="accordion-header" id="heading14">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+									<span>How can corporate businesses ensure sustainability?</span>
+								</button>
+							</h2>
+							<div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample_31">
+								<div class="accordion-body ">
+									<div class="bi-faq-text">
+										Corporate business refers to large-scale operations involving multiple stakeholders and structured governance for achieving specific business goals.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item wow fadeInUp"  data-wow-delay="200ms" data-wow-duration="1000ms">
+							<h2 class="accordion-header" id="heading87">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse87" aria-expanded="true" aria-controls="collapse87">
+									<span>	What challenges do corporate businesses commonly face?</span>
+								</button>
+							</h2>
+							<div id="collapse87" class="accordion-collapse collapse" aria-labelledby="heading87" data-bs-parent="#accordionExample_31">
+								<div class="accordion-body ">
+									<div class="bi-faq-text">
+										Corporate business refers to large-scale operations involving multiple stakeholders and structured governance for achieving specific business goals.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vt-faq-bottom mt-50 text-center pera-content">
+					<p>Don't see your question? Jump in our Slack!</p>
+					<div class="vt-btn mt-20 text-capitalize text-center">
+						<a href="#">Get in Touch</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>		
 <!-- End of Faq  section
+	============================================= -->
+
+<!-- Start of Contact  section
+	============================================= -->
+	<section id="vt-contact" class="vt-contact-section">
+		<div class="container">
+			<div class="vt-contact-content">
+				<div class="vt-contact-text-wrap">
+					<div class="vt-section-title headline pera-content">
+						<div class="subtitle">
+							Contact Us
+						</div>
+						<h2 class="section_title">Get in Touch with Us Today</h2>
+						<p>Our consulting services drive growth, optimize operations, and ensure strategic business success.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>		
+<!-- End of Contact  section
 	============================================= -->	
 
 
@@ -1062,6 +1164,11 @@
 				},
 			});
 		};
+	</script>
+	<script>
+		$(document).on('click', '.vt-faq-item-area .accordion-item', function(){
+			$(this).addClass('faq_active').siblings().removeClass('faq_active')
+		});
 	</script>
 </body>
 </html>  

@@ -3063,6 +3063,105 @@ select:visited {
 }
 
 /*---------------------------------------------------- */
+/*Faq Section*/
+/*----------------------------------------------------*/
+.vt-faq-section .vt-section-title {
+  margin: 0 auto;
+  max-width: 630px;
+}
+
+.vt-faq-item-area {
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 35px;
+  border-bottom: 1px solid #DFE1E5;
+}
+.vt-faq-item-area .accordion-item,
+.vt-faq-item-area .accordion-button:not(.collapsed),
+.vt-faq-item-area .accordion-button {
+  background-color: transparent;
+}
+.vt-faq-item-area .accordion-item {
+  border: none;
+  border-radius: 0;
+  position: relative;
+  padding: 34px 0px 28px;
+  border-top: 1px solid #DFE1E5;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.vt-faq-item-area .accordion-item.faq_active {
+  border-top: 1px solid var(--vt-title-color);
+}
+.vt-faq-item-area .accordion-button {
+  padding: 0;
+  border: none;
+  line-height: 1;
+  font-size: 23px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 6px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  color: var(--vt-title-color);
+  font-family: var(--vt-heading);
+}
+@media (max-width: 480px) {
+  .vt-faq-item-area .accordion-button {
+    font-size: 20px;
+  }
+}
+.vt-faq-item-area .accordion-button span {
+  width: 80%;
+}
+.vt-faq-item-area .accordion-button:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.vt-faq-item-area .accordion-body {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.vt-faq-item-area .accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.vt-faq-item-area .accordion-button:not(.collapsed):after {
+  color: #C9F7CA;
+  content: "\f068";
+  border: 1px solid var(--vt-title-color);
+  background-color: var(--vt-title-color);
+}
+.vt-faq-item-area .accordion-button::after {
+  right: 0;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 300;
+  content: "\f067";
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #DFE1E5;
+  font-family: "Font Awesome 5 Pro";
+}
+
+/*---------------------------------------------------- */
+/*Contact Section*/
+/*----------------------------------------------------*/
+/*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
 /*---------------------------------------------------- */
