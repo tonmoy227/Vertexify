@@ -1,13 +1,135 @@
 .vt-footer-widget-area {
-	margin: 0 auto;
-	max-width: 946px;
-	gap: 30px 120px;
+	gap: 30px 80px;
 }
 .vt-footer-widget {
 	.widget-title {
 		font-size: 14px;
 		font-weight: 500;
+		padding-bottom: 18px;
 		letter-spacing: 3px;
 		color: var(--vt-title-color);
+	}
+	.logo-widget {
+		margin-right: 60px;
+		a {
+			width: 100%;
+			display: block;
+		}
+	}
+	.menu-widget {
+		ul {
+			li {
+				color: #4F4F4F;
+				font-size: 16px;
+				margin-bottom: 12px;
+				a {
+					position: relative;
+					display: inline-block;
+					&:before {
+						left: 0;
+						right: 0;
+						bottom: 0;
+						height: 1px;
+						width: 0%;
+						content: '';
+						margin: 0 auto;
+						position: absolute;
+						background-color: #3533FF;
+						transition: all 500ms ease;
+					}
+					&:hover {
+						&:before {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.cta-widget {
+		.cta-info {
+			.info-icon {
+				width: 32px;
+				height: 32px;
+				border-radius: 100%;
+				margin-right: 15px;
+				background-color: #E7E7E7;
+				i {
+					font-size: 14px;
+				}
+			}
+			.info-text {
+				max-width: 138px;
+				span, a {
+					display: block;
+					font-size: 14px;
+				}
+				a {
+					display: flex;
+					font-weight: 500;
+					font-family: var(--vt-heading);
+					span {
+						margin-right: 5px;
+						font-family: var(--vt-body-font);
+					}
+				}
+			}
+		}
+		.cta-text {
+			font-size: 14px;
+			margin-top: 35px;
+			span {
+				font-family: var(--vt-heading);
+			}
+			i {
+				margin-left: 5px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	.social-widget {
+		a {
+			font-size: 14px;
+			margin-right: 20px;
+			color: var(--vt-title-color);
+		}
+	}
+}
+.vt-footer-copyright {
+	padding-bottom: 45px;
+	justify-content: space-between;
+	.vt-copyright-text {
+		font-size: 16px;
+		a {
+			font-family: var(--vt-heading);
+		}
+	}
+	.vt-copyright-menu {
+		li {
+			margin-left: 40px;
+			color: var(--vt-title-color);
+			a {
+				font-size: 16px;
+				position: relative;
+				padding-bottom: 2px;
+				&:before {
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 1px;
+					width: 0%;
+					content: '';
+					margin: 0 auto;
+					position: absolute;
+					background-color: #3533FF;
+					transition: all 500ms ease;
+				}
+				&:hover {
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 }
