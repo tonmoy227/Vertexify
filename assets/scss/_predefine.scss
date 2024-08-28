@@ -129,6 +129,18 @@ body::-webkit-scrollbar-thumb {
 	line-height: 1.25;
 	font-family: var(--vt-heading);
 }
+@keyframes pxlImgIn {
+	0% {
+		transform: scale(1)
+	}
+
+	50% {
+		transform: scale(1.15)
+	}
+	100% {
+		transform: scale(1)
+	}
+}
 #preloader { 
 	position: fixed; 
 	left: 0;
@@ -137,7 +149,18 @@ body::-webkit-scrollbar-thumb {
 	width: 100%; 
 	height: 100%;
 	overflow: visible;
-	background: #fff url('../img/loader.gif') no-repeat center center;
+	background-color: #fff;
+	.preloader-logo {
+		left: 0;
+		top: 50%;
+		right: 0;
+		text-align: center;
+		position: absolute;
+		transform: translateY(-50%);
+		img {
+			animation: pxlImgIn 1500ms ease-in-out infinite;
+		}
+	}
 }
 
 [data-background] {

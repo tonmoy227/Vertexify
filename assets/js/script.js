@@ -189,51 +189,71 @@ Testimonial Slider
 				},
 			},
 		});
-		};			/*
+	};
+					/*
 Client Logo Slider
 ====start====
 */
-		if ($('.vt-contact-logo-slide').length > 0 ) {
-			var swiper2 = new Swiper(".vt-contact-logo-slide", {
-				loop: true,
-				speed: 1000,
-				slidesPerView: 3,
-				spaceBetween: 50,
-				roundLengths: true,
-				autoplay: {
-					delay: 2500,
-					disableOnInteraction: false,
+	if ($('.vt-contact-logo-slide').length > 0 ) {
+		var swiper2 = new Swiper(".vt-contact-logo-slide", {
+			loop: true,
+			speed: 1000,
+			slidesPerView: 3,
+			spaceBetween: 50,
+			roundLengths: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			breakpoints: {  
+				'1400': {
+					slidesPerView: 3,
 				},
-				breakpoints: {  
-					'1400': {
-						slidesPerView: 3,
-					},
-					'1300': {
-						slidesPerView: 3,
-					},
-					'1200': {
-						slidesPerView: 3,
-					},
-					'992': {
-						slidesPerView: 3,
-					},
-					'768': {
-						slidesPerView: 3,
-					},
-					'767': {
-						slidesPerView: 3 ,
-					},
-					'576': {
-						slidesPerView: 3,
-					},
-					'480': {
-						slidesPerView: 2,
-					},
-					'0': {
-						slidesPerView: 2,
-					},
+				'1300': {
+					slidesPerView: 3,
 				},
+				'1200': {
+					slidesPerView: 3,
+				},
+				'992': {
+					slidesPerView: 3,
+				},
+				'768': {
+					slidesPerView: 3,
+				},
+				'767': {
+					slidesPerView: 3 ,
+				},
+				'576': {
+					slidesPerView: 3,
+				},
+				'480': {
+					slidesPerView: 2,
+				},
+				'0': {
+					slidesPerView: 2,
+				},
+			},
+		});
+	};
+					/*
+Txt-item-active
+====start====
+*/
+	jQuery(window).on('load', function(){
+		const boxes = gsap.utils.toArray('.txt_item_active');
+		boxes.forEach(svg => {
+			gsap.to(svg, {
+				scrollTrigger: {
+					trigger: svg,
+					start: "top 100%",
+					end: "bottom bottom",
+					toggleClass: "active",
+					toggleActions: "play play play reverse",
+					once: true,
+				}
 			});
-		};
+		});
+	});
 
-	})(jQuery);
+})(jQuery);
