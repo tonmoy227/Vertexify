@@ -1,0 +1,28 @@
+.vt-get-in-touch-section {
+	z-index: 1;
+	padding-top: 120px;
+	padding-bottom: 405px;
+	background-color: #fff;
+	.vt-section-title {
+		margin: 0 auto;
+		max-width: 510px;
+	}
+}
+.vt-get-in-touch-content {
+	gap: 30px 80px;
+	padding-top: 45px;
+}
+.vt-get-in-touch-item {
+	h3 {
+		font-size: 14px;
+		font-weight: 500;
+		padding-bottom: 5px;
+		color: var(--vt-title-color);
+	}
+	p {
+		margin: 0 auto;
+		font-size: 16px;
+		line-height: 1.3;
+		max-width: 145px;
+	}
+}

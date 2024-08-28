@@ -1,0 +1,13 @@
+.vt-footer-widget-area {
+	margin: 0 auto;
+	max-width: 946px;
+	gap: 30px 120px;
+}
+.vt-footer-widget {
+	.widget-title {
+		font-size: 14px;
+		font-weight: 500;
+		letter-spacing: 3px;
+		color: var(--vt-title-color);
+	}
+}
