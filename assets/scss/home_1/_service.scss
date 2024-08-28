@@ -1,4 +1,5 @@
 .vt-service-section {
+
 	.vt-section-title {
 		max-width: 696px;
 	}
@@ -32,11 +33,17 @@
 .vt-service-section-2 {
 	margin: 0 auto;
 	max-width: 1920px;
+	.vt-vertical-shape-2 { 
+		z-index: 2;
+		span {
+			background-color: #F6F6F6;
+		}
+	}
 }
 .vt-service-item-2 {
 	z-index: 1;
 	height: 890px;
-	padding-top: 80px;
+	padding-top: 125px;
 	@media #{$md,$sm,$xs} {
 		height: 350px;
 	}

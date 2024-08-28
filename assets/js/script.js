@@ -249,6 +249,7 @@ Txt-item-active
 					start: "top 100%",
 					end: "bottom bottom",
 					toggleClass: "active",
+					duration: 3,
 					toggleActions: "play play play reverse",
 					once: true,
 				}

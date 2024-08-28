@@ -129,7 +129,7 @@ body::-webkit-scrollbar-thumb {
 	line-height: 1.25;
 	font-family: var(--vt-heading);
 }
-@keyframes pxlImgIn {
+@keyframes TXTImgIn {
 	0% {
 		transform: scale(1)
 	}
@@ -158,7 +158,7 @@ body::-webkit-scrollbar-thumb {
 		position: absolute;
 		transform: translateY(-50%);
 		img {
-			animation: pxlImgIn 1500ms ease-in-out infinite;
+			animation: TXTImgIn 1500ms ease-in-out infinite;
 		}
 	}
 }
@@ -326,7 +326,7 @@ select:visited {
 		padding-top: 25px;
 	}
 }
-@keyframes pxl_blinds_staggered {
+@keyframes Shape_Animation {
 	0%,25% {
 		background-position: 0 100%
 	}
@@ -340,7 +340,7 @@ select:visited {
 	right: 0;
 	bottom: 0;
 	width: 100%;
-	height: 100px;
+	height: 150px;
 	position: absolute;
 	&:before {
 		top: 0;
@@ -361,12 +361,34 @@ select:visited {
 			-webkit-filter: contrast(999);
 			filter: contrast(999);
 			mix-blend-mode: screen;
-			-webkit-animation: pxl_blinds_staggered 1.5s linear alternate;
-			-khtml-animation: pxl_blinds_staggered 1.5s linear alternate;
-			-moz-animation: pxl_blinds_staggered 1.5s linear alternate;
-			-ms-animation: pxl_blinds_staggered 1.5s linear alternate;
-			-o-animation: pxl_blinds_staggered 1.5s linear alternate;
-			animation: pxl_blinds_staggered 1.5s linear alternate;
+			-webkit-animation: Shape_Animation 1.5s linear alternate;
+			-khtml-animation: Shape_Animation 1.5s linear alternate;
+			-moz-animation: Shape_Animation 1.5s linear alternate;
+			-ms-animation: Shape_Animation 1.5s linear alternate;
+			-o-animation: Shape_Animation 1.5s linear alternate;
+			animation: Shape_Animation 1.5s linear alternate;
+		}
+
+	}
+	&.shape_2 {
+		height: 100px;
+	}
+}
+.vt-vertical-shape-2 {
+	left: 0;
+	width: 100%;
+	height: 44px;
+	position: absolute;
+	span {
+		width: 100%;
+		height: 4px;
+		display: block;
+		margin-bottom: 8px;
+		&:nth-child(2) {
+			height: 8px;
+		}
+		&:nth-child(3) {
+			height: 16px;
 		}
 	}
 }

@@ -550,7 +550,7 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--vt-heading);
 }
 
-@-webkit-keyframes pxlImgIn {
+@-webkit-keyframes TXTImgIn {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -565,7 +565,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@keyframes pxlImgIn {
+@keyframes TXTImgIn {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -599,8 +599,8 @@ body::-webkit-scrollbar-thumb {
           transform: translateY(-50%);
 }
 #preloader .preloader-logo img {
-  -webkit-animation: pxlImgIn 1500ms ease-in-out infinite;
-          animation: pxlImgIn 1500ms ease-in-out infinite;
+  -webkit-animation: TXTImgIn 1500ms ease-in-out infinite;
+          animation: TXTImgIn 1500ms ease-in-out infinite;
 }
 
 [data-background] {
@@ -777,7 +777,7 @@ select:visited {
   padding-top: 25px;
 }
 
-@-webkit-keyframes pxl_blinds_staggered {
+@-webkit-keyframes Shape_Animation {
   0%, 25% {
     background-position: 0 100%;
   }
@@ -786,7 +786,7 @@ select:visited {
   }
 }
 
-@keyframes pxl_blinds_staggered {
+@keyframes Shape_Animation {
   0%, 25% {
     background-position: 0 100%;
   }
@@ -799,7 +799,7 @@ select:visited {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 150px;
   position: absolute;
 }
 .vt-vertical-shape:before {
@@ -819,8 +819,30 @@ select:visited {
   -webkit-filter: contrast(999);
   filter: contrast(999);
   mix-blend-mode: screen;
-  -webkit-animation: pxl_blinds_staggered 1.5s linear alternate;
-  animation: pxl_blinds_staggered 1.5s linear alternate;
+  -webkit-animation: Shape_Animation 1.5s linear alternate;
+  animation: Shape_Animation 1.5s linear alternate;
+}
+.vt-vertical-shape.shape_2 {
+  height: 100px;
+}
+
+.vt-vertical-shape-2 {
+  left: 0;
+  width: 100%;
+  height: 44px;
+  position: absolute;
+}
+.vt-vertical-shape-2 span {
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin-bottom: 8px;
+}
+.vt-vertical-shape-2 span:nth-child(2) {
+  height: 8px;
+}
+.vt-vertical-shape-2 span:nth-child(3) {
+  height: 16px;
 }
 
 .mt-5 {
@@ -2325,11 +2347,17 @@ select:visited {
   margin: 0 auto;
   max-width: 1920px;
 }
+.vt-service-section-2 .vt-vertical-shape-2 {
+  z-index: 2;
+}
+.vt-service-section-2 .vt-vertical-shape-2 span {
+  background-color: #F6F6F6;
+}
 
 .vt-service-item-2 {
   z-index: 1;
   height: 890px;
-  padding-top: 80px;
+  padding-top: 125px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .vt-service-item-2 {
