@@ -1,5 +1,26 @@
+.vt-footer-section {
+	overflow: hidden;
+	.vt-footer-shape {
+		right: -50px;
+		bottom: -50px;
+	}
+}
+.vt-footer-content {
+	.vt-scrollup {
+		right: 0;
+		bottom: 55px;
+	}
+}
 .vt-footer-widget-area {
 	gap: 30px 80px;
+	@media #{$lg,$md,$sm,$xs} {
+		gap: 30px 70px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media #{$xxs} {
+		justify-content: start;
+	}
 }
 .vt-footer-widget {
 	.widget-title {
@@ -11,6 +32,9 @@
 	}
 	.logo-widget {
 		margin-right: 60px;
+		@media #{$xl,$lg,$md,$sm,$xs} {
+			margin-right: 0;
+		}
 		a {
 			width: 100%;
 			display: block;
@@ -48,6 +72,10 @@
 	}
 	.cta-widget {
 		.cta-info {
+			@media #{$lg,$md,$sm,$xs} {
+				gap: 15px 0px;
+				flex-wrap: wrap;
+			}
 			.info-icon {
 				width: 32px;
 				height: 32px;
@@ -98,6 +126,10 @@
 .vt-footer-copyright {
 	padding-bottom: 45px;
 	justify-content: space-between;
+	@media #{$sm,$xs} {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	.vt-copyright-text {
 		font-size: 16px;
 		a {
@@ -105,9 +137,15 @@
 		}
 	}
 	.vt-copyright-menu {
+		@media #{$xxs} { 
+			text-align: center;
+		}
 		li {
 			margin-left: 40px;
 			color: var(--vt-title-color);
+			@media #{$xxs} { 
+				margin: 0px 10px;
+			}
 			a {
 				font-size: 16px;
 				position: relative;

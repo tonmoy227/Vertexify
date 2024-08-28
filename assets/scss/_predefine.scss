@@ -303,6 +303,50 @@ select:visited {
 		padding-top: 25px;
 	}
 }
+@keyframes pxl_blinds_staggered {
+	0%,25% {
+		background-position: 0 100%
+	}
+
+	75%,100% {
+		background-position: 0 0
+	}
+}
+.vt-vertical-shape {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	&:before {
+		top: 0;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		pointer-events: none;
+	}
+	&.active {
+		&:before {
+			background: repeating-linear-gradient(#868686, #fff 6.25%), -webkit-gradient(linear, left top, left bottom, color-stop(33.3%, #000), color-stop(0, grey), color-stop(66.7%, #fff)) 0 / 100% 305%;
+			background: -o-repeating-linear-gradient(#868686, #fff 6.25%), -o-linear-gradient(#000 33.3%, grey 0, #fff 66.7%) 0 / 100% 305%;
+			background: repeating-linear-gradient(#868686, #fff 6.25%), linear-gradient(#000 33.3%, grey 0, #fff 66.7%) 0 / 100% 305%;
+			background-blend-mode: multiply;
+			background-position: 0 0;
+			-webkit-filter: contrast(999);
+			filter: contrast(999);
+			mix-blend-mode: screen;
+			-webkit-animation: pxl_blinds_staggered 1.5s linear alternate;
+			-khtml-animation: pxl_blinds_staggered 1.5s linear alternate;
+			-moz-animation: pxl_blinds_staggered 1.5s linear alternate;
+			-ms-animation: pxl_blinds_staggered 1.5s linear alternate;
+			-o-animation: pxl_blinds_staggered 1.5s linear alternate;
+			animation: pxl_blinds_staggered 1.5s linear alternate;
+		}
+	}
+}
 // txa-common-css-start
 
 @for $i from 1 through 40 {
