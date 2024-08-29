@@ -218,6 +218,12 @@
 }
 .vt-service-section-3 {
 	background-color: var(--vt-gray);
+	.vt-vertical-shape-2 {
+		bottom: 5px;
+		span {
+			background-color: #fff;
+		}
+	}
 }
 .vt-service-content {
 	z-index: 1;
@@ -235,6 +241,29 @@
 		height: 100%;
 		max-width: 720px;
 		max-height: 920px;
+		.vt-vertical-shape-2 {
+			left: 5px;
+			bottom: 0px;
+			width: 40px;
+			height: 100%;
+			display: flex;
+			span {
+				width: 6px;
+				height: 100%;
+				margin-bottom: 0;
+				margin-right: 6px;
+				background-color: #fff;
+				&:nth-child(2) {
+					width: 6px;
+					height: 100%;
+					margin-right: 10px;
+				}
+				&:nth-child(3) {
+					width: 6px;
+					height: 100%;
+				}
+			}
+		}
 		@media #{$xl} {
 			max-width: 645px;
 		}

@@ -1,6 +1,12 @@
 .vt-blog-section {
 	overflow: hidden;
 	background-color: #E7E7E7;
+	.vt-vertical-shape-2 {
+		bottom: 5px;
+		span {
+			background-color: #fff;
+		}
+	}
 }
 .vt-blog-item {
 	max-width: 384px;
