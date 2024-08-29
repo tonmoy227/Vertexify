@@ -30,6 +30,11 @@
 			height: 100%;
 		}
 	}
+	&.dark_version {
+		&:before {
+			background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
+		}
+	}
 }
 .vt-banner-text {
 	z-index: 1;
@@ -81,5 +86,27 @@
 	p {
 		padding-top: 25px;
 		padding-bottom: 32px;
+	}
+	&.dark_version {
+		.banner-slug {
+			color: #C9F7CA;
+			background: rgba(201, 247, 202, 0.16);
+			&:before,
+			&:after {
+				background-color: #C9F7CA;
+			}
+		}
+		.banner_title {
+			color: #fff;
+		}
+		p {
+			color: rgba(255, 255, 255, .72);
+		}
+		.vt-btn {
+			a {
+				color: var(--vt-title-color);
+				background-color: #C9F7CA;
+			}
+		}
 	}
 }
