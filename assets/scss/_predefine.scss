@@ -325,6 +325,12 @@ select:visited {
 	p {
 		padding-top: 25px;
 	}
+	&.ver_2 {
+		.subtitle {
+			background: transparent;
+			border: 1px solid rgba(223, 225, 229, 1);
+		}
+	}
 }
 @keyframes Shape_Animation {
 	0%,25% {

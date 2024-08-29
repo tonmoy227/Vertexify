@@ -257,4 +257,31 @@ Txt-item-active
 		});
 	});
 
+	// home-3 prdict image animation 
+	var ardh9 = gsap.timeline({
+		
+		scrollTrigger: {
+			animation: ardh9,
+			trigger: '.art-predict-area-wrap',
+			start: "top 10%",
+			end: "bottom 0%",
+			scrub: 2,
+			pin: true,
+			pinSpacing: true,
+			markers: false
+		}
+
+	});
+	
+	ardh9
+	.to( ".predict_item_1, .predict_text_1" , { opacity: 1, duration: 2 })
+	.to(".predict_text_1", {opacity: 0.2, duration: 1})
+	.to( ".predict_item_2, .predict_text_2" , { opacity: 1, duration: 2,})
+	.to(".predict_text_2", {opacity: 0.2, duration: 1})
+	.to( ".predict_item_3, .predict_text_3" , { opacity: 1, duration: 2,})
+	.to(".predict_text_3", {opacity: 0.2, duration: 1})
+	.to( ".predict_item_4, .predict_text_4" , { opacity: 1, duration: 2,})
+	.to( ".predict_item_5" , { opacity: 1, duration: 2,})
+	.to(".predict_text_1, .predict_text_2, .predict_text_3", {opacity: 1, duration: 2})
+	.to( ".predict_item_6" , { opacity: 1, duration: 2,})
 })(jQuery);

@@ -72,3 +72,18 @@
 		}
 	}
 }
+.vt-about-counter-2 {
+	.vt-about-counter {
+		gap: 30px 72px;
+		max-width: 775px;
+		@media #{$md,$sm,$xs} {
+			max-width: 100%;
+		}
+		&:before {
+			display: none;
+		}
+		.vt-counter-item {
+			margin-bottom: 0;
+		}
+	}
+}
