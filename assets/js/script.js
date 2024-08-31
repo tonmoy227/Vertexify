@@ -286,4 +286,25 @@ Testimonial Slider
 		});
 	};
 
+				/*
+Service Scroll
+====start====
+*/
+	gsap.utils.toArray('.vt-service-content-6').forEach((el, index) => { 
+		let Vertex = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".vt-service-section-6",
+				scrub: 6,
+				start: "top 20%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse", 
+				markers: false
+			}
+		})
+
+		Vertex
+		.set(el, {transformOrigin: 'top bottom'})
+		.fromTo(el, { x: 0  }, { x: -1200 , duration: 30, immediateRender: false})
+	});
+
 })(jQuery);

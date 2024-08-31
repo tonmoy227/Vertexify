@@ -1,0 +1,141 @@
+.vt-service-section-7 {
+	overflow: hidden;
+	.vt-section-title {
+		max-width: 802px;
+	}
+}
+.vt-service-item-7 {
+	height: 100%;
+	flex: 0 0 auto;
+	max-width: 280px;
+	max-height: 384px;
+	margin-right: 32px;
+	padding: 40px 32px 45px;
+	background-color: #FFF2D4;
+	.item-icon {
+		width: 72px;
+		height: 72px;
+		margin-bottom: 85px;
+	}
+	.item-text {
+		.ser_title {
+			font-size: 23px;
+			padding-bottom: 16px;
+			color: var(--vt-title-color);
+		}
+		p {
+			color: #454545;
+			font-size: 16px;
+			line-height: 1.333;
+		}
+	}
+	&.vt_color_2 {
+		background-color: #93ADFF;
+	}
+	&.vt_color_3 {
+		background-color: #D5F0B7;
+	}
+	&.vt_color_4 {
+		background-color: #FAC9B2;
+	}
+	&.vt_color_5 {
+		background-color: #E7A9FE;
+	}
+	&.vt_color_6 {
+		background-color: #3D531D;
+		.item-icon {
+			svg {
+				fill: #fff;
+			}
+		}
+		.item-text {
+			.ser_title {
+				color: #fff;
+			}
+			p {
+				color: #fff;
+				opacity: .72;
+			}
+		}
+	}
+}
+.vt-service-content-8 {
+	gap: 30px;
+	@media #{$md,$sm,$xs} {
+		flex-wrap: wrap;
+	}
+}
+.vt-service-text-wrap-8 {
+	max-width: 490px;
+	@media #{$md,$sm,$xs} {
+		max-width: 100%;
+	}
+	.vt-section-title {
+		.section_title {
+			font-size: 64px;
+			@media #{$md,$sm,$xs} {
+				font-size: 45px;
+			}
+			@media #{$xxs} {
+				font-size: 30px;
+			}
+		}
+	}
+	.vt-btn {
+		a {
+			color: var(--vt-title-color);
+			background-color: transparent;
+			border: 2px solid var(--vt-title-color);
+		}
+	}
+}
+.vt-service-item-list {
+	width: 100%;
+	padding: 48px;
+	max-width: 609px;
+	background-color: #F6F6F6;
+	@media #{$xs} {
+		padding: 30px 15px;
+	}
+	@media #{$md,$sm,$xs} {
+		max-width: 100%;
+	}
+	li {
+		a {
+			width: 100%;
+			line-height: 1;
+			color: #5D5D5D;
+			font-size: 32px;
+			display: inline-block;
+			position: relative;
+			padding: 30px 15px 30px 35px;
+			@media #{$lg,$md,$xs} {
+				font-size: 26px;
+				padding: 25px 15px 25px 35px;
+			}
+			&:before {
+				top: 45px;
+				left: 25px;
+				width: 4px;
+				height: 4px;
+				content: '';
+				position: absolute;
+				border-radius: 100%;
+				background-color: #5D5D5D;
+				transition: all 500ms ease;
+				@media #{$lg,$md,$xs} {
+					top:35px;
+				}
+			}
+			&:hover {
+				color: #C9F7CA;
+				padding-left: 50px;
+				background-color: var(--vt-title-color);
+				&:before {
+					left: 35px;
+					background-color: #C9F7CA;
+				}
+			}
+		}
+	}
+}
