@@ -257,31 +257,33 @@ Txt-item-active
 		});
 	});
 
-	// home-3 prdict image animation 
-	var ardh9 = gsap.timeline({
-		
-		scrollTrigger: {
-			animation: ardh9,
-			trigger: '.art-predict-area-wrap',
-			start: "top 10%",
-			end: "bottom 0%",
-			scrub: 2,
-			pin: true,
-			pinSpacing: true,
-			markers: false
-		}
+				/*
+Testimonial Slider
+====start====
+*/
+	if ($('.vt-testimonial-slider-2').length > 0 ) {
+		var swiper2 = new Swiper(".vt-testimonial-slider-2", {
+			slidesPerView: 1,
+			loop: true,
+			spaceBetween: 0,
+			speed: 1000,
+			navigation: {
+				nextEl: ".vt-testi-next-2",
+				prevEl: ".vt-testi-prev-2",
+			},
+			pagination: {
+				el: ".vt-testi-pagination-2",
+				type: 'fraction',
+				formatFractionCurrent: function (number) {
+					if (number < 10) {
+						return '0' + number;
+					} else {
+						return number;
+					}
+				}
+				
+			},
+		});
+	};
 
-	});
-	
-	ardh9
-	.to( ".predict_item_1, .predict_text_1" , { opacity: 1, duration: 2 })
-	.to(".predict_text_1", {opacity: 0.2, duration: 1})
-	.to( ".predict_item_2, .predict_text_2" , { opacity: 1, duration: 2,})
-	.to(".predict_text_2", {opacity: 0.2, duration: 1})
-	.to( ".predict_item_3, .predict_text_3" , { opacity: 1, duration: 2,})
-	.to(".predict_text_3", {opacity: 0.2, duration: 1})
-	.to( ".predict_item_4, .predict_text_4" , { opacity: 1, duration: 2,})
-	.to( ".predict_item_5" , { opacity: 1, duration: 2,})
-	.to(".predict_text_1, .predict_text_2, .predict_text_3", {opacity: 1, duration: 2})
-	.to( ".predict_item_6" , { opacity: 1, duration: 2,})
 })(jQuery);
