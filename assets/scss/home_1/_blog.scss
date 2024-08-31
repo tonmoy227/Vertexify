@@ -15,20 +15,18 @@
 	.item-img {
 		margin-bottom: 24px;
 	}
-	.item-text {
-		.item-tag {
-			margin-bottom: 18px;
-			a {
-				display: block;
-				margin-bottom: 8px;
-				span {
-					padding: 8px 10px;
-					line-height: 1;
-					font-size: 15px;
-					display: inline-block;	
-					background-color: #fff;
-					color: var(--vt-title-color);
-				}
+	.item-tag {
+		margin-bottom: 18px;
+		a {
+			display: block;
+			margin-bottom: 5px;
+			span {
+				padding: 8px 10px;
+				line-height: 1;
+				font-size: 15px;
+				display: inline-block;	
+				background-color: #fff;
+				color: var(--vt-title-color);
 			}
 		}
 		.blog_title {
@@ -36,6 +34,27 @@
 			font-weight: 500;
 			font-size: 23px;
 			line-height: 1.30;
+		}
+	}
+	&.ver_2 {
+		.item-img-meta {
+			.item-tag {
+				left: 8px;
+				bottom: 6px;
+				margin-bottom: 0;
+				position: absolute;
+			}
+		}
+		.item-tag { 
+			a {
+				span {
+					background-color: #D1D1D1;
+				}
+			}
+		}
+		.blog_title {
+			font-size: 23px;
+			color: var(--vt-title-color);
 		}
 	}
 }

@@ -3392,14 +3392,14 @@ select:visited {
 .vt-blog-item .item-img {
   margin-bottom: 24px;
 }
-.vt-blog-item .item-text .item-tag {
+.vt-blog-item .item-tag {
   margin-bottom: 18px;
 }
-.vt-blog-item .item-text .item-tag a {
+.vt-blog-item .item-tag a {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
-.vt-blog-item .item-text .item-tag a span {
+.vt-blog-item .item-tag a span {
   padding: 8px 10px;
   line-height: 1;
   font-size: 15px;
@@ -3407,11 +3407,24 @@ select:visited {
   background-color: #fff;
   color: var(--vt-title-color);
 }
-.vt-blog-item .item-text .blog_title {
+.vt-blog-item .item-tag .blog_title {
   color: var(--vt-title-color);
   font-weight: 500;
   font-size: 23px;
   line-height: 1.3;
+}
+.vt-blog-item.ver_2 .item-img-meta .item-tag {
+  left: 8px;
+  bottom: 6px;
+  margin-bottom: 0;
+  position: absolute;
+}
+.vt-blog-item.ver_2 .item-tag a span {
+  background-color: #D1D1D1;
+}
+.vt-blog-item.ver_2 .blog_title {
+  font-size: 23px;
+  color: var(--vt-title-color);
 }
 
 /*---------------------------------------------------- */
@@ -3510,6 +3523,11 @@ select:visited {
   font-family: "Font Awesome 5 Pro";
 }
 
+.vt-faq-bottom p {
+  font-size: 23px;
+  font-family: var(--vt-heading);
+}
+
 /*---------------------------------------------------- */
 /*Contact Section*/
 /*----------------------------------------------------*/
@@ -3523,6 +3541,22 @@ select:visited {
   opacity: 0.2;
   z-index: -1;
   left: 110px;
+}
+.vt-contact-section .contact-pattern {
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 1;
+  width: 100%;
+  height: 436px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.vt-contact-section .contact-pattern img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .vt-contact-section .vt-vertical-shape-2 {
   bottom: 5px;
@@ -4266,6 +4300,13 @@ select:visited {
 }
 
 /*---------------------------------------------------- */
+/*Blog Section*/
+/*----------------------------------------------------*/
+.vt-blog-section-2 {
+  background-color: #F5F5F3;
+}
+
+/*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
 .vt-footer-section {
@@ -4275,10 +4316,21 @@ select:visited {
   right: -50px;
   bottom: -50px;
 }
+.vt-footer-section.dark_version {
+  background-color: var(--vt-title-color);
+}
+.vt-footer-section.dark_version .vt-footer-shape {
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
 
 .vt-footer-content .vt-scrollup {
   right: 0;
   bottom: 55px;
+}
+.vt-footer-content .vt-scrollup.white_color {
+  color: #fff;
 }
 
 .vt-footer-widget-area {
@@ -4398,6 +4450,38 @@ select:visited {
   margin-right: 20px;
   color: var(--vt-title-color);
 }
+.vt-footer-widget.white_color .widget-title {
+  color: #fff;
+  opacity: 0.87;
+}
+.vt-footer-widget.white_color .menu-widget li a {
+  color: #fff;
+  opacity: 0.65;
+}
+.vt-footer-widget.white_color .cta-widget .cta-info .info-icon {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+.vt-footer-widget.white_color .cta-widget .cta-info .info-icon i {
+  color: #fff;
+}
+.vt-footer-widget.white_color .cta-widget .cta-info .info-text span {
+  color: rgba(255, 255, 255, 0.64);
+}
+.vt-footer-widget.white_color .cta-widget .cta-info .info-text a {
+  color: rgb(255, 255, 255);
+}
+.vt-footer-widget.white_color .cta-widget .cta-text a {
+  color: rgba(255, 255, 255, 0.64);
+}
+.vt-footer-widget.white_color .cta-widget .cta-text span {
+  color: #fff;
+}
+.vt-footer-widget.white_color .cta-widget .cta-text i {
+  color: #fff;
+}
+.vt-footer-widget.white_color .social-widget a {
+  color: #fff;
+}
 
 .vt-footer-copyright {
   padding-bottom: 45px;
@@ -4454,6 +4538,15 @@ select:visited {
 }
 .vt-footer-copyright .vt-copyright-menu li a:hover:before {
   width: 100%;
+}
+.vt-footer-copyright.white_color .vt-copyright-text {
+  color: rgba(255, 255, 255, 0.64);
+}
+.vt-footer-copyright.white_color .vt-copyright-text a {
+  color: #fff;
+}
+.vt-footer-copyright.white_color .vt-copyright-menu li a {
+  color: rgba(255, 255, 255, 0.64);
 }
 
 /*---------------------------------------------------- */
