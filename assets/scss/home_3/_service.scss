@@ -51,13 +51,20 @@
 		.item-text {
 			.ser_title {
 				color: #fff;
-			}
+			} 
 			p {
 				color: #fff;
 				opacity: .72;
 			}
 		}
 	}
+}
+.vt-service-section-8 {
+	z-index: 2;
+	position: relative;
+	background-color: #fff;
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
 }
 .vt-service-content-8 {
 	gap: 30px;
@@ -98,6 +105,7 @@
 		padding: 30px 15px;
 	}
 	@media #{$md,$sm,$xs} {
+
 		max-width: 100%;
 	}
 	li {

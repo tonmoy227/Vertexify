@@ -398,6 +398,10 @@ select:visited {
 		}
 	}
 }
+.section_border_radius {
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+}
 // txa-common-css-start
 
 @for $i from 1 through 40 {

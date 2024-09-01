@@ -928,6 +928,11 @@ select:visited {
   height: 16px;
 }
 
+.section_border_radius {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
 .mt-5 {
   margin-top: 5px;
 }
@@ -3409,6 +3414,19 @@ select:visited {
 .vt-blog-item .item-img {
   margin-bottom: 24px;
 }
+.vt-blog-item .item-img .img_shape {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.vt-blog-item .item-img .img_shape img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: overlay;
+}
 .vt-blog-item .item-tag {
   margin-bottom: 18px;
 }
@@ -3450,6 +3468,10 @@ select:visited {
 .vt-faq-section .vt-section-title {
   margin: 0 auto;
   max-width: 630px;
+}
+.vt-faq-section.section_border_radius {
+  z-index: 2;
+  background-color: #fff;
 }
 
 .vt-faq-item-area {
@@ -3580,6 +3602,9 @@ select:visited {
 }
 .vt-contact-section .vt-vertical-shape-2 span {
   background-color: #fff;
+}
+.vt-contact-section.section_border_radius {
+  margin-top: -40px;
 }
 
 .vt-contact-content {
@@ -4251,6 +4276,10 @@ select:visited {
 /*---------------------------------------------------- */
 /*Testimonial Section*/
 /*----------------------------------------------------*/
+.vt-testimonial-section-2.section_border_radius {
+  z-index: 1;
+  background-color: #fff;
+}
 .vt-testimonial-section-2 .vt-service-pattern {
   top: 0;
   left: 0;
@@ -4326,6 +4355,9 @@ select:visited {
 /*----------------------------------------------------*/
 .vt-blog-section-2 {
   background-color: #F5F5F3;
+}
+.vt-blog-section-2.section_border_radius {
+  margin-top: -40px;
 }
 
 /*---------------------------------------------------- */
@@ -4574,6 +4606,14 @@ select:visited {
   opacity: 0.72;
 }
 
+.vt-service-section-8 {
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
 .vt-service-content-8 {
   gap: 30px;
 }
@@ -4670,6 +4710,72 @@ select:visited {
 }
 
 /*---------------------------------------------------- */
+/*Get In Touch Section*/
+/*----------------------------------------------------*/
+.vt-get-in-touch-section-2 {
+  z-index: 1;
+  overflow: hidden;
+  margin-top: -40px;
+}
+.vt-get-in-touch-section-2 .vt-get-in-touch-bg {
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.vt-get-in-touch-section-2 .vt-get-in-touch-bg .item-bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.vt-get-in-touch-section-2 .vt-get-in-touch-bg .item-bg:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(16, 16, 16, 0)), to(#101010));
+  background: linear-gradient(270deg, rgba(16, 16, 16, 0) 0%, #101010 100%);
+}
+.vt-get-in-touch-section-2 .vt-get-in-touch-bg .item-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: overlay;
+}
+.vt-get-in-touch-section-2 .vt-get-in-touch-bg .logo_shape {
+  bottom: 0;
+  right: 0;
+}
+.vt-get-in-touch-section-2 .vt-get-in-touch-bg .logo_shape img {
+  mix-blend-mode: overlay;
+}
+
+.vt-get-in-touch-text-2 {
+  max-width: 615px;
+}
+.vt-get-in-touch-text-2 .vt-section-title .subtitle {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.vt-get-in-touch-text-2 .vt-section-title .subtitle:before, .vt-get-in-touch-text-2 .vt-section-title .subtitle:after {
+  background-color: #fff;
+}
+.vt-get-in-touch-text-2 .vt-section-title .section_title {
+  color: #fff;
+}
+.vt-get-in-touch-text-2 .vt-section-title p {
+  color: #fff;
+  opacity: 0.72;
+}
+.vt-get-in-touch-text-2 .vt-btn a {
+  background-color: #fff;
+  color: var(--vt-title-color);
+}
+
+/*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
 .vt-footer-section {
@@ -4686,6 +4792,10 @@ select:visited {
   right: 0;
   bottom: 0;
   opacity: 0.2;
+}
+.vt-footer-section.dark_version.ver_2 {
+  margin-top: -40px;
+  background-color: #1C255C;
 }
 
 .vt-footer-content .vt-scrollup {

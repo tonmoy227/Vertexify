@@ -1,4 +1,8 @@
 .vt-testimonial-section-2 {
+	&.section_border_radius {
+		z-index: 1;
+		background-color: #fff;
+	}
 	.vt-service-pattern {
 		top: 0;
 		left: 0;
