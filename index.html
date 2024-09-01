@@ -179,10 +179,10 @@
 				<div class="banner-slug">
 					Experience Creative Freedom
 				</div>
-				<h1 class="banner_title">Transforming Businesses with Expertise.</h1>
+				<h1 class="tx-split-text banner_title banner_title_line">Transforming Businesses with Expertise.</h1>
 				<p>Our consulting service drives growth, enhances efficiency, and transforms businesses for lasting success.</p>
-				<div class="vt-btn text-capitalize">
-					<a href="#">Browse All Services</a>
+				<div class="vt-btn  btn-spin">
+					<a class="btn-text-nina" href="#">Browse All Services</a>
 				</div>
 			</div>
 		</div>
@@ -209,7 +209,7 @@
 								<img src="assets/img/icon/ser-icon1.svg">
 							</div>
 							<div class="item-text headline pera-content">
-								<h3><a href="#">Strategic Planning</a></h3>
+								<h3 class="href-underline"><a href="#">Strategic Planning</a></h3>
 								<p>We offer strategic planning to drive sustainable growth, operational efficiency, and long-term success.</p>
 							</div>
 						</div>
@@ -221,7 +221,7 @@
 								<img src="assets/img/icon/ser-icon2.svg">
 							</div>
 							<div class="item-text headline pera-content">
-								<h3><a href="#">Operational Optimisation</a></h3>
+								<h3 class="href-underline"><a href="#">Operational Optimisation</a></h3>
 								<p>We optimize operations to enhance efficiency, reduce costs, and improve overall performance.</p>
 							</div>
 						</div>
@@ -233,7 +233,7 @@
 								<img src="assets/img/icon/ser-icon3.svg">
 							</div>
 							<div class="item-text headline pera-content">
-								<h3><a href="#">Financial Consulting</a></h3>
+								<h3 class="href-underline"><a href="#">Financial Consulting</a></h3>
 								<p>Our financial consulting services drive growth, improve profitability, and ensure sound financial management.</p>
 							</div>
 						</div>
@@ -1292,5 +1292,47 @@
 	<script src="assets/js/ScrollTrigger.min.js"></script>
 	<script src="assets/js/SplitText.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script>
+		setTimeout(() => {
+			var a = document.querySelectorAll(".btn-spin a");
+			a.forEach(function (a) {
+				a.addEventListener("mouseover", function () {
+					var c, b, d;
+					!a.classList.contains("animating") &&
+					!a.classList.contains("mouseover") &&
+					(a.classList.add("animating", "mouseover"),
+						(c = a.innerText.split("")),
+						setTimeout(function () {
+							a.classList.remove("animating");
+						}, (c.length + 1) * 50),
+						(b = a.dataset.animation),
+						b || (b = "vt-spin"),
+						(a.innerText = ""),
+						c.forEach(function (b) {
+							b == " " && (b = "&nbsp;"), (a.innerHTML += '<span class="letter">' + b + "</span>");
+						}),
+						(d = a.querySelectorAll(".letter")),
+						d.forEach(function (a, c) {
+							setTimeout(function () {
+								a.classList.add(b);
+							}, 50 * c);
+						}));
+				}),
+				a.addEventListener("mouseout", function () {
+					a.classList.remove("mouseover");
+				});
+			});
+		}, 100);
+	</script>
+	<script>
+		$('.btn-text-nina').each(function() {
+			var b = .045,
+			c = $(this).children().length,
+			d = c - 1;
+			$(this).find('> .pxl--btn-text > span').each(function(c, d) {
+				$(this).css('transition-delay', b + 's'), b = b + .045
+			})
+		})
+	</script>
 </body>
 </html>  

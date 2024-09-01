@@ -306,5 +306,43 @@ Service Scroll
 		.set(el, {transformOrigin: 'top bottom'})
 		.fromTo(el, { x: 0  }, { x: -1200 , duration: 30, immediateRender: false})
 	});
-
+					/*
+Animation
+====start====
+*/
+	var st = jQuery(".tx-split-text");
+	if(st.length == 0) return;
+	gsap.registerPlugin(SplitText);
+	st.each(function(index, el) {
+		el.split = new SplitText(el, { 
+			type: "lines,words,chars",
+			linesClass: "split-line"
+		});
+		gsap.set(el, { perspective: 1000 });
+		if( jQuery(el).hasClass('banner_title_line') ){
+			gsap.set(el.split.lines, {
+				opacity: 0,
+				y: 100,
+				ease: "power1.out",
+			});
+		}
+		el.anim = gsap.to(el.split.lines, {
+			scrollTrigger: {
+				trigger: el,
+				start: "top 90%",
+			},
+			x: "0",
+			y: "0",
+			rotateX: "0",
+			rotation: 0,
+			rotationX: "0",
+			color: 'inherit',
+			webkitTextStroke: "0px white",
+			scale: 1,
+			opacity: 1,
+			yPercent: 0,
+			duration: 1, 
+			stagger: 0.53,
+		});
+	});
 })(jQuery);

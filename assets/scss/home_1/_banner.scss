@@ -74,6 +74,7 @@
 	.banner_title {
 		line-height: 1;
 		font-size: 	64px;
+		overflow: hidden;
 		letter-spacing: -2px;
 		color: var(--vt-title-color);
 		@media #{$md} {

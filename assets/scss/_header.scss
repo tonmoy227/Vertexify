@@ -360,7 +360,10 @@
 				white-space: nowrap;
 				font-family: var(--vt-heading);
 				background-color: var(--vt-title-color);
-				
+				&:hover {
+					color: #fff;
+					background-color: #3533FF;
+				}
 			}
 		}
 		.canvas-trigger {
