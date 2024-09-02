@@ -57,6 +57,39 @@ Background Image
 	$('[data-background]').each(function() {
 		$(this).css('background-image', 'url('+ $(this).attr('data-background') + ')');
 	});
+	/*
+Header Area
+====start====
+*/
+	function TXTheaderSticky() {
+		var $window = $(window);
+		var lastScrollTop = 0;
+		var $header = $('.txa_sticky_header');
+		var headerHeight = $header.outerHeight() + 30;
+
+		$window.scroll(function () {
+			var windowTop = $window.scrollTop();
+
+			if (windowTop >= headerHeight) {
+				$header.addClass('txa_sticky');
+			} else {
+				$header.removeClass('txa_sticky');
+				$header.removeClass('txa_sticky_show');
+			}
+
+			if ($header.hasClass('txa_sticky')) {
+				if (windowTop < lastScrollTop) {
+					$header.addClass('txa_sticky_show');
+				} else {
+					$header.removeClass('txa_sticky_show');
+				}
+			}
+
+			lastScrollTop = windowTop;
+		});
+	}
+
+	TXTheaderSticky();
 		/*
 Service Slider
 ====start====
@@ -320,29 +353,51 @@ Animation
 		});
 		gsap.set(el, { perspective: 1000 });
 		if( jQuery(el).hasClass('banner_title_line') ){
-			gsap.set(el.split.lines, {
+			gsap.set(el.split.words, {
 				opacity: 0,
 				y: 100,
-				ease: "power1.out",
+				ease: "circ.out",
 			});
 		}
-		el.anim = gsap.to(el.split.lines, {
+		el.anim = gsap.to(el.split.words, {
 			scrollTrigger: {
 				trigger: el,
 				start: "top 90%",
 			},
-			x: "0",
 			y: "0",
-			rotateX: "0",
-			rotation: 0,
-			rotationX: "0",
-			color: 'inherit',
-			webkitTextStroke: "0px white",
 			scale: 1,
 			opacity: 1,
-			yPercent: 0,
 			duration: 1, 
-			stagger: 0.53,
+			stagger: 0.25,
 		});
 	});
+	gsap.utils.toArray(".vt-text p").forEach(e => {
+		let i = gsap.timeline({
+			scrollTrigger: {
+				trigger: e,
+				start: "top 90%",
+				duration: 2,
+				end: "bottom 60%",
+				scrub: !1,
+				markers: !1,
+				toggleActions: "play none none none"
+			}
+		}),
+		t = new SplitText(e, {
+			type: "lines"
+		});
+		gsap.set(e, {
+			perspective: 400
+		}), t.split({
+			type: "lines"
+		}), i.from(t.lines, {
+			duration: 1,
+			delay: .5,
+			opacity: 0,
+			rotationX: -80,
+			force3D: !0,
+			transformOrigin: "top center -50",
+			stagger: .1
+		})
+	})
 })(jQuery);

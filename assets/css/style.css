@@ -66,7 +66,7 @@ Font load
 }
 .vt-header-section .dropdown-menu {
   left: 0;
-  top: 70px;
+  top: 55px;
   z-index: 100;
   margin: 0px;
   padding: 4px 4px;
@@ -379,6 +379,7 @@ Font load
 }
 .vt-header-section.header_style_one .vt-header-navigation .main-navigation li a {
   font-size: 16px;
+  padding-bottom: 30px;
   font-family: var(--vt-heading);
   color: var(--vt-title-color);
 }
@@ -501,6 +502,30 @@ Font load
 }
 .vt-header-section.header_style_one.dark_version .canvas-trigger span {
   background-color: #fff;
+}
+
+/* 
+  sticky-header-css-start
+  */
+.txa_sticky_header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  z-index: 8;
+}
+.txa_sticky_header:is(.txa_sticky) {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+}
+.txa_sticky_header:is(.txa_sticky):is(.txa_sticky_show) {
+  top: -40px;
+  background-color: #fff;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 /*global area*/
@@ -2358,11 +2383,18 @@ select:visited {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 .vt-banner-section .vt-banner-shape {
   right: 0;
   bottom: 0px;
   position: absolute;
+}
+.vt-banner-section .vt-banner-shape svg path {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  -webkit-transition: all 1500ms ease;
+  transition: all 1500ms ease;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .vt-banner-section .vt-banner-shape {
@@ -2388,6 +2420,44 @@ select:visited {
   background: -webkit-gradient(linear, left top, left bottom, from(#101010), to(rgba(16, 16, 16, 0)));
   background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
 }
+.vt-banner-section.active .vt-banner-shape svg path {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.vt-banner-section.active .vt-banner-shape svg path:nth-child(1) {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+.vt-banner-section.active .vt-banner-shape svg path:nth-child(2) {
+  -webkit-transition-delay: 700ms;
+          transition-delay: 700ms;
+}
+.vt-banner-section.active .vt-banner-shape svg path:nth-child(3) {
+  -webkit-transition-delay: 900ms;
+          transition-delay: 900ms;
+}
+.vt-banner-section.active .vt-banner-shape svg path:nth-child(4) {
+  -webkit-transition-delay: 1100ms;
+          transition-delay: 1100ms;
+}
+.vt-banner-section.active .vt-banner-shape svg path:nth-child(5) {
+  -webkit-transition-delay: 1300ms;
+          transition-delay: 1300ms;
+}
+.vt-banner-section.active .vt-banner-shape svg path:nth-child(6) {
+  -webkit-transition-delay: 1500ms;
+          transition-delay: 1500ms;
+}
+.vt-banner-section.active .banner-slug {
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+.vt-banner-section.active .bt-banner-img img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 3500ms ease;
+  transition: all 3500ms ease;
+}
 
 .vt-banner-text {
   z-index: 1;
@@ -2409,6 +2479,9 @@ select:visited {
   position: relative;
   margin-bottom: 16px;
   display: inline-block;
+  -webkit-transition: all 1000ms ease;
+  transition: all 1000ms ease;
+  clip-path: polygon(53% 0, 53% 0, 53% 100%, 53% 100%);
   background: -webkit-gradient(linear, left top, right top, from(#DBF0FF), color-stop(50%, #DFE2FF), to(#F6DFFF));
   background: linear-gradient(90deg, #DBF0FF 0%, #DFE2FF 50%, #F6DFFF 100%);
 }
@@ -2428,7 +2501,7 @@ select:visited {
   left: 10px;
 }
 .vt-banner-text .banner_title {
-  line-height: 1;
+  line-height: 1.15;
   font-size: 64px;
   overflow: hidden;
   letter-spacing: -2px;
