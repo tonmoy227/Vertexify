@@ -36,18 +36,33 @@
 		display: flex;
 		span {
 			width: 6px;
-			height: 100%;
+			height: 0%;
 			margin-bottom: 0;
 			margin-right: 6px;
 			background-color: #fff;
+			transition: all 700ms ease;
 			&:nth-child(2) {
 				width: 6px;
-				height: 100%;
+				height: 0%;
 				margin-right: 10px;
 			}
 			&:nth-child(3) {
 				width: 6px;
+				height: 0%;
+			}
+		}
+		&.active {
+			span {
 				height: 100%;
+				transition-delay: 1300ms;
+				&:nth-child(2) {
+					height: 100%;
+					transition-delay: 1500ms;
+				}
+				&:nth-child(3) {
+					height: 100%;
+					transition-delay: 1800ms;
+				}
 			}
 		}
 	}
@@ -91,6 +106,14 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+	.item-icon {
+		svg {
+			path {
+				stroke-dasharray: 2500;
+				stroke-dashoffset: 0;
+			}
+		}
+	}
 	.item-text {
 		max-width: 470px;
 		@media #{$lg,$md,$sm,$xs} {
@@ -105,6 +128,15 @@
 		p {
 			color: #454545;
 			font-size: 18px;
+		}
+	}
+	&:hover {
+		.item-icon {
+			svg {
+				path {
+					animation: SVGTX 8s ease;
+				}
+			}
 		}
 	}
 	&.dark_version {

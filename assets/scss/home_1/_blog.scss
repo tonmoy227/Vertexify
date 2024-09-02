@@ -13,7 +13,12 @@
 	margin: 0 auto;
 	margin-bottom: 30px;
 	.item-img {
+		overflow: hidden;
 		margin-bottom: 24px;
+		position: relative;
+		img {
+			transition: all 500ms ease;
+		}
 		.img_shape {
 			top: 0;
 			left: 0;
@@ -25,6 +30,19 @@
 				object-fit: cover;
 				mix-blend-mode: overlay;
 			}
+		}
+		&:before {
+			top: 50%;
+			bottom: 50%;
+			opacity: 1;
+			left: 0;
+			z-index: 1;
+			content: "";
+			right: 0;
+			position: absolute;
+			pointer-events: none;
+			transition: all 500ms linear;
+			background: rgba(255, 255, 255, 0.4);
 		}
 	}
 	.item-tag {
@@ -46,6 +64,19 @@
 			font-weight: 500;
 			font-size: 23px;
 			line-height: 1.30;
+		}
+	}
+	&:hover {
+		.item-img {
+			img {
+				transform: scale(1.05);
+			}
+			&:before {
+				top: 0;
+				bottom: 0;
+				opacity: 0;
+				transition: all 500ms linear;
+			}
 		}
 	}
 	&.ver_2 {
