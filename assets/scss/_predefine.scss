@@ -321,6 +321,10 @@ select:visited {
 			color: var(--vt-title-color);
 			background-color: transparent;
 			border: 2px solid var(--vt-title-color);
+			&:hover {
+				color: #fff;
+				border: 2px solid #3533FF;
+			}
 		}
 	}
 }
@@ -354,7 +358,7 @@ select:visited {
 	.section_title {
 		font-size: 45px;
 		font-weight: 500;
-		line-height: 1.0666;
+		line-height: 1.15;
 		letter-spacing: -2px;
 		color: var(--vt-title-color);
 		@media #{$md,$sm,$xs} {
@@ -431,12 +435,20 @@ select:visited {
 		width: 100%;
 		height: 4px;
 		display: block;
+		height: 33.33%;
 		margin-bottom: 8px;
+		transform-origin: bottom;
+		transition: all 500ms ease;
 		&:nth-child(2) {
-			height: 8px;
+			transition-delay: 400ms;
 		}
 		&:nth-child(3) {
-			height: 16px;
+			transition-delay: 600ms;
+		}
+	}
+	&.active {
+		span {
+			height: 0;
 		}
 	}
 }

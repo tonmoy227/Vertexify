@@ -24,14 +24,23 @@
 	}
 	&:before {
 		top: 0;
+		bottom: 0;
 		left: -40px;
 		width: 2px;
 		content: ''; 
-		height: 100%;
+		height: 0;
+		margin: auto 0;
 		position: absolute;
 		background-color: #C9F7CA;
+		transition: all 900ms ease;
 		@media #{$lg,$md,$sm,$xs} {
 			display: none;
+		}
+	}
+	&.active {
+		&:before {
+			height: 100%;
+			transition-delay: 1800ms;
 		}
 	}
 }
