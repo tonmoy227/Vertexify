@@ -13,6 +13,8 @@ Font load
 	--vt-grandient-2: #DFE2FF;
 	--vt-grandient-3: #F6DFFF;
 	--vt-gradient-color:  linear-gradient(90deg, var(--vt-grandient-1) 0%, var(--vt-grandient-2) 50%, var(--vt-grandient-3) 100%);
+	--cube-1: cubic-bezier(0.55, 0.085, 0, 0.99);
+    --cube-2: all .25s cubic-bezier(.645,.045,.355,1);
   
 }
 // Responsive Variables

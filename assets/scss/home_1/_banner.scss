@@ -16,6 +16,7 @@
 		bottom: 0px;
 		position: absolute;
 		svg {
+			mix-blend-mode: overlay;
 			path {
 				clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 				transition: all 1500ms ease;
@@ -83,7 +84,7 @@
 }
 .vt-banner-text {
 	z-index: 1;
-	max-width: 520px;
+	max-width: 535px;
 	padding-top: 245px;
 	position: relative;
 	padding-bottom: 195px;
