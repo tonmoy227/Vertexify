@@ -450,6 +450,10 @@
 				a {
 					border: 2px solid #C9F7CA;
 					background-color: transparent;
+					&:hover {
+						color: var(--vt-title-color);
+						background-color: #C9F7CA;
+					}
 				}
 			}
 			.canvas-trigger { 
@@ -479,6 +483,11 @@
   			top: -40px;
   			background-color: #fff;
   			transform: translateY(0%);
+  		}
+  	}
+  	&.dark_version {
+  		&:is(.txa_sticky_show) { 
+  			background-color: var(--vt-title-color);
   		}
   	}
 

@@ -33,18 +33,20 @@
 		.banner_heading {
 			z-index: 1;
 			position: relative;
-			padding: 30px 0px;
+			padding: 15px 0px;
 			&:before {
 				top: 0;
 				left: 0;
 				z-index: -1;
-				width: 100%;
+				width: 0%;
 				content: '';
 				height: 100%;
 				position: absolute;
 				background-color: #C9F7CA;
+				transition: all 2500ms ease;
 			}
 			.banner_title {
+				line-height: 1.15;
 				max-width: 488px;
 			}
 		}
@@ -55,9 +57,10 @@
 	}
 	.vt-banner-img {
 		top: 46%;
-		right: 0;
+		right: -55%;
 		z-index: 2;
 		transform: translateY(-50%);
+		transition: all 1500ms ease;
 		@media #{$xl} { 
 			right: -150px;
 		}
@@ -89,23 +92,26 @@
 			top: -40px;
 			right: 32px;
 			width: 64px;
-			height: 530px;
+			height: 0px;
 			text-align: center;
 			background-color: #1C255C;
+			transition: all 1500ms ease;
 			@media #{$sm,$xs} { 
 				height: 430px;
 				right: 15px;
-			 }
+			}
 			@media #{$xl} { 
 				right: 180px;
 			}
 			&:before,
 			&:after {
-				left: -30px;
+				left: 0px;
+				opacity: 0;
 				width: 30px;
 				content: '';
 				height: 40px;
 				position: absolute;
+				transition: all 500ms ease;
 				background: linear-gradient(312.82deg, #9556FD 13.91%, #FF2295 85.45%);
 			}
 			&:before {
@@ -117,6 +123,7 @@
 				clip-path: polygon(0 0, 100% 100%, 100% 0);
 			}
 			a {
+				opacity: 0;
 				width: 32px;
 				color: #fff;
 				height: 58px;
@@ -124,6 +131,7 @@
 				margin: 0 auto;
 				font-size: 14px;
 				align-items: center;
+				transform: scale(0);
 				justify-content: center;
 				border-bottom: 1px solid #00073E;
 				&:hover {
@@ -132,19 +140,61 @@
 			}
 		}
 		.social-icon {
-			border-top: 1px solid #00073E;
+			border-top: 1px solid transparent;
 		}
 		&:before {
 			top: 0px;
-			left: -85px;
+			left: 75px;
 			content: "";
 			width: 170px;
 			height: 200px;
 			position: absolute;
+			transition: all 1500ms ease;
 			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 			background: linear-gradient(312.82deg, #9556FD 13.91%, #FF2295 85.45%);
 			@media #{$lg,$md,$sm,$xs} { 
 				display: none;
+			}
+		}
+	}
+	&.active {
+		.vt-banner-img {
+			right: 0;
+			transition-delay: 1500ms;
+			&:before {
+				left: -85px;
+				transition-delay: 2500ms;
+			}
+			.hero-social {
+				height: 530px;
+				transition-delay: 3500ms;
+				&:before,
+				&:after {
+					opacity: 1;
+					left: -30px;
+					transition-delay: 4000ms;
+				}
+				a {
+					opacity: 1;
+					transform: scale(1.0);
+					transition-delay: 5000ms;
+				}
+				.social-icon {
+					transition-delay: 5000ms;
+					border-top: 1px solid #00073E;
+				}
+			}
+		}
+		.vt-banner-text {
+			.banner-slug {
+				transition-delay: 500ms;
+				clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+			}
+			.banner_heading {
+				&:before {
+					width: 100%;
+					transition-delay: 500ms;
+				}
 			}
 		}
 	}

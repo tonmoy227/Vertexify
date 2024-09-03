@@ -59,6 +59,9 @@
 		a {
 			background-color: #fff;
 			color: var(--vt-title-color);
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 }

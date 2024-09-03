@@ -95,7 +95,7 @@
                 var e = $(".cursor");
                 $(window).on("mousemove", function i(t) {
                     var s = t.clientX + "px",
-                        n = t.clientY + "px";
+                    n = t.clientY + "px";
                     TweenMax.to(e, .2, {
                         left: s,
                         top: n,
@@ -160,18 +160,18 @@
                 });
                 gsap.utils.toArray(".headline-title").forEach(e => {
                     let i = gsap.timeline({
-                            scrollTrigger: {
-                                trigger: e,
-                                start: "top 90%",
-                                end: "bottom 60%",
-                                scrub: !1,
-                                markers: !1,
-                                toggleActions: "play none none none"
-                            }
-                        }),
-                        t = new SplitText(e, {
-                            type: "words, lines"
-                        });
+                        scrollTrigger: {
+                            trigger: e,
+                            start: "top 90%",
+                            end: "bottom 60%",
+                            scrub: !1,
+                            markers: !1,
+                            toggleActions: "play none none none"
+                        }
+                    }),
+                    t = new SplitText(e, {
+                        type: "words, lines"
+                    });
                     gsap.set(e, {
                         perspective: 400
                     }), t.split({
@@ -187,14 +187,14 @@
                     })
                 }), $(".bi-btn-hover").on("mouseenter", function(e) {
                     var i = e.pageX - $(this).offset().left,
-                        t = e.pageY - $(this).offset().top;
+                    t = e.pageY - $(this).offset().top;
                     $(this).find("span").css({
                         top: t,
                         left: i
                     })
                 }), $(".bi-btn-hover").on("mouseout", function(e) {
                     var i = e.pageX - $(this).offset().left,
-                        t = e.pageY - $(this).offset().top;
+                    t = e.pageY - $(this).offset().top;
                     $(this).find("span").css({
                         top: t,
                         left: i
@@ -222,36 +222,45 @@
                         i.split = new SplitText(i, {
                             type: "lines,words,chars",
                             linesClass: "split-line"
-                        }), gsap.set(i, {
+                        }), 
+                        gsap.set(i, {
                             perspective: 400
-                        }), $(i).hasClass("split-in-fade") && gsap.set(i.split.chars, {
+                        }), 
+                        $(i).hasClass("split-in-fade") && gsap.set(i.split.chars, {
                             opacity: 0,
                             ease: "Back.easeOut"
-                        }), $(i).hasClass("split-in-right") && gsap.set(i.split.chars, {
+                        }),
+                        $(i).hasClass("split-in-right") && gsap.set(i.split.chars, {
                             opacity: 0,
                             x: "50",
                             ease: "Back.easeOut"
-                        }), $(i).hasClass("split-in-left") && gsap.set(i.split.chars, {
+                        }),
+                        $(i).hasClass("split-in-left") && gsap.set(i.split.chars, {
                             opacity: 0,
                             x: "-50",
                             ease: "circ.out"
-                        }), $(i).hasClass("split-in-up") && gsap.set(i.split.chars, {
+                        }),
+                        $(i).hasClass("split-in-up") && gsap.set(i.split.chars, {
                             opacity: 0,
                             y: "80",
                             ease: "circ.out"
-                        }), $(i).hasClass("split-in-down") && gsap.set(i.split.chars, {
+                        }),
+                        $(i).hasClass("split-in-down") && gsap.set(i.split.chars, {
                             opacity: 0,
                             y: "-80",
                             ease: "circ.out"
-                        }), $(i).hasClass("split-in-rotate") && gsap.set(i.split.chars, {
+                        }),
+                        $(i).hasClass("split-in-rotate") && gsap.set(i.split.chars, {
                             opacity: 0,
                             rotateX: "50deg",
                             ease: "circ.out"
-                        }), $(i).hasClass("split-in-scale") && gsap.set(i.split.chars, {
+                        }),
+                        $(i).hasClass("split-in-scale") && gsap.set(i.split.chars, {
                             opacity: 0,
                             scale: "0.5",
                             ease: "circ.out"
-                        }), i.anim = gsap.to(i.split.chars, {
+                        }),
+                        i.anim = gsap.to(i.split.chars, {
                             scrollTrigger: {
                                 trigger: i,
                                 start: "top 90%"
@@ -268,19 +277,19 @@
                 });
                 gsap.utils.toArray(".bins-text p").forEach(e => {
                     let i = gsap.timeline({
-                            scrollTrigger: {
-                                trigger: e,
-                                start: "top 90%",
-                                duration: 2,
-                                end: "bottom 60%",
-                                scrub: !1,
-                                markers: !1,
-                                toggleActions: "play none none none"
-                            }
-                        }),
-                        t = new SplitText(e, {
-                            type: "lines"
-                        });
+                        scrollTrigger: {
+                            trigger: e,
+                            start: "top 90%",
+                            duration: 2,
+                            end: "bottom 60%",
+                            scrub: !1,
+                            markers: !1,
+                            toggleActions: "play none none none"
+                        }
+                    }),
+                    t = new SplitText(e, {
+                        type: "lines"
+                    });
                     gsap.set(e, {
                         perspective: 400
                     }), t.split({
@@ -294,7 +303,8 @@
                         transformOrigin: "top center -50",
                         stagger: .1
                     })
-                }), $(window).on("load", function() {
+                }),
+                $(window).on("load", function() {
                     let e = gsap.utils.toArray(".tx-animation-style1,.bi-img-animation");
                     e.forEach(e => {
                         gsap.to(e, {
@@ -351,8 +361,8 @@
             CircleProgress: function() {
                 $(".count-box").length && $(".count-box").appear_c(function() {
                     var e = $(this),
-                        i = e.find(".count-text").attr("data-stop"),
-                        t = parseInt(e.find(".count-text").attr("data-speed"), 10);
+                    i = e.find(".count-text").attr("data-stop"),
+                    t = parseInt(e.find(".count-text").attr("data-speed"), 10);
                     e.hasClass("counted") || (e.addClass("counted"), $({
                         countNum: e.find(".count-text").text()
                     }).animate({
@@ -751,59 +761,59 @@
             textanimation: function() {
                 if (window.innerWidth > 768) {
                     let e = Matter.Engine,
-                        i = Matter.Render,
-                        t = Matter.World,
-                        s = Matter.Bodies,
-                        n = Matter.Mouse,
-                        o = Matter.MouseConstraint,
-                        a = e.create(),
-                        r = i.create({
-                            element: document.querySelector(".service-matter"),
-                            engine: a,
-                            options: {
-                                width: window.innerWidth,
-                                height: window.innerWidth <= 768 ? 300 : 360,
-                                background: "transparent",
-                                wireframes: !1,
-                                pixelRatio: window.devicePixelRatio
-                            }
-                        }),
-                        l = r.canvas;
+                    i = Matter.Render,
+                    t = Matter.World,
+                    s = Matter.Bodies,
+                    n = Matter.Mouse,
+                    o = Matter.MouseConstraint,
+                    a = e.create(),
+                    r = i.create({
+                        element: document.querySelector(".service-matter"),
+                        engine: a,
+                        options: {
+                            width: window.innerWidth,
+                            height: window.innerWidth <= 768 ? 300 : 360,
+                            background: "transparent",
+                            wireframes: !1,
+                            pixelRatio: window.devicePixelRatio
+                        }
+                    }),
+                    l = r.canvas;
                     e.run(a), i.run(r);
                     let d = s.rectangle(r.options.width / 2, r.options.height, r.options.width, 30, {
-                            isStatic: !0,
-                            render: {
-                                fillStyle: "transparent",
-                                strokeStyle: "transparent"
-                            }
-                        }),
-                        c = s.rectangle(0, r.options.height / 2, 30, r.options.height, {
-                            isStatic: !0,
-                            render: {
-                                fillStyle: "transparent",
-                                strokeStyle: "transparent"
-                            }
-                        }),
-                        p = s.rectangle(r.options.width, r.options.height / 2, 30, r.options.height, {
-                            isStatic: !0,
-                            render: {
-                                fillStyle: "transparent",
-                                strokeStyle: "transparent"
-                            }
-                        });
+                        isStatic: !0,
+                        render: {
+                            fillStyle: "transparent",
+                            strokeStyle: "transparent"
+                        }
+                    }),
+                    c = s.rectangle(0, r.options.height / 2, 30, r.options.height, {
+                        isStatic: !0,
+                        render: {
+                            fillStyle: "transparent",
+                            strokeStyle: "transparent"
+                        }
+                    }),
+                    p = s.rectangle(r.options.width, r.options.height / 2, 30, r.options.height, {
+                        isStatic: !0,
+                        render: {
+                            fillStyle: "transparent",
+                            strokeStyle: "transparent"
+                        }
+                    });
                     t.add(a.world, [d, c, p]);
                     let u = ["#ffd1dc", "#d1ffd1", "#d1d1ff", "#ffecd1", "#ffd1ec"];
 
                     function f(e) {
                         let i = [],
-                            t = .4 * e,
-                            s = e,
-                            n = Math.PI / 4;
+                        t = .4 * e,
+                        s = e,
+                        n = Math.PI / 4;
                         for (let o = 0; o < 8; o++) {
                             let a = n * o,
-                                r = o % 2 == 0 ? s : t,
-                                l = Math.cos(a) * r,
-                                d = Math.sin(a) * r;
+                            r = o % 2 == 0 ? s : t,
+                            l = Math.cos(a) * r,
+                            d = Math.sin(a) * r;
                             i.push({
                                 x: l,
                                 y: d
@@ -812,60 +822,60 @@
                         return i
                     }
                     let g = n.create(r.canvas),
-                        m = o.create(a, {
-                            mouse: g,
-                            constraint: {
-                                render: {
-                                    visible: !1
-                                }
+                    m = o.create(a, {
+                        mouse: g,
+                        constraint: {
+                            render: {
+                                visible: !1
                             }
-                        });
+                        }
+                    });
                     t.add(a.world, m), r.mouse = g;
                     let h = new IntersectionObserver(e => {
                         e.forEach(e => {
                             e.isIntersecting && (! function e() {
                                 let i = window.innerWidth <= 768 ? {
-                                        fontSize: 12,
-                                        padding: 15,
-                                        width: 200,
-                                        height: 30,
-                                        chamferRadius: 15
-                                    } : {
-                                        fontSize: 18,
-                                        padding: 30,
-                                        width: 350,
-                                        height: 50,
-                                        chamferRadius: 25
-                                    },
-                                    {
-                                        fontSize: n,
-                                        padding: o,
-                                        width: l,
-                                        height: d,
-                                        chamferRadius: c
-                                    } = i,
-                                    p = w.map((e, i) => {
-                                        let t = r.options.width / 2 + (Math.random() - .5) * 500;
-                                        return r.context.font = `${n}px Inter, sans-serif`, u[Math.floor(Math.random() * u.length)], s.rectangle(t, -(100 * i), l || 350, d || 50, {
-                                            chamfer: {
-                                                radius: c
-                                            },
-                                            render: {
-                                                fillStyle: "transparent",
-                                                strokeStyle: "#9D83B4",
-                                                lineWidth: 1,
-                                                text: {
-                                                    content: e,
-                                                    size: n,
-                                                    color: "#E8D9F5"
-                                                }
-                                            },
-                                            velocity: {
-                                                x: (Math.random() - .5) * 4,
-                                                y: 4 * Math.random()
+                                    fontSize: 12,
+                                    padding: 15,
+                                    width: 200,
+                                    height: 30,
+                                    chamferRadius: 15
+                                } : {
+                                    fontSize: 18,
+                                    padding: 30,
+                                    width: 350,
+                                    height: 50,
+                                    chamferRadius: 25
+                                },
+                                {
+                                    fontSize: n,
+                                    padding: o,
+                                    width: l,
+                                    height: d,
+                                    chamferRadius: c
+                                } = i,
+                                p = w.map((e, i) => {
+                                    let t = r.options.width / 2 + (Math.random() - .5) * 500;
+                                    return r.context.font = `${n}px Inter, sans-serif`, u[Math.floor(Math.random() * u.length)], s.rectangle(t, -(100 * i), l || 350, d || 50, {
+                                        chamfer: {
+                                            radius: c
+                                        },
+                                        render: {
+                                            fillStyle: "transparent",
+                                            strokeStyle: "#9D83B4",
+                                            lineWidth: 1,
+                                            text: {
+                                                content: e,
+                                                size: n,
+                                                color: "#E8D9F5"
                                             }
-                                        })
-                                    });
+                                        },
+                                        velocity: {
+                                            x: (Math.random() - .5) * 4,
+                                            y: 4 * Math.random()
+                                        }
+                                    })
+                                });
                                 window.addEventListener("resize", () => {
                                     t.clear(a.world, !0), e()
                                 }), t.add(a.world, [...p]), r.context.font = "18px Inter, sans-serif", r.context.textAlign = "center", r.context.textBaseline = "middle", Matter.Events.on(r, "afterRender", () => {
@@ -913,7 +923,7 @@
                     duration: 1
                 }), $("[data-countdown]").each(function() {
                     var e = $(this),
-                        i = $(this).data("countdown");
+                    i = $(this).data("countdown");
                     e.hasClass("countdown-full-format") ? e.countdown(i, function(i) {
                         e.html(i.strftime('<div class="single"><h1>%Y</h1><p>Years</p></div> <div class="single"><h1>%m</h1><p>Months</p></div> <div class="single"><h1>%W</h1><p>Weeks</p></div> <div class="single"><h1>%d</h1><p>Days</p></div> <div class="single"><h1>%H</h1><p>Hours</p></div> <div class="single"><h1>%M</h1><p>Minutes</p></div> <div class="single"><h1>%S</h1><p>Second</p></div>'))
                     }) : e.countdown(i, function(i) {

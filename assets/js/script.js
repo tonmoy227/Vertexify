@@ -9,12 +9,17 @@ Last change:    00/00/00
 ;(function($) {
 
 	"use strict";
-	const lenis = new Lenis()
-	function raf(time) {
-		lenis.raf(time)
-		requestAnimationFrame(raf)
-	}
-	requestAnimationFrame(raf)
+	const lenis = new Lenis({
+		duration: .5,	
+	})
+
+
+	lenis.on('scroll', ScrollTrigger.update);
+	gsap.ticker.add((time) => {
+		lenis.raf(time * 1000)
+	});
+	gsap.ticker.lagSmoothing(0);
+
 	/*
 preloader
 ====start====
@@ -22,6 +27,54 @@ preloader
 	jQuery(window).on('load', function(){
 		jQuery('#preloader').fadeOut('slow',function(){jQuery(this).remove();});
 	});
+	setTimeout(() => {
+		var a = document.querySelectorAll(".btn-spin a");
+		a.forEach(function (a) {
+			a.addEventListener("mouseover", function () {
+				var c, b, d;
+				!a.classList.contains("animating") &&
+				!a.classList.contains("mouseover") &&
+				(a.classList.add("animating", "mouseover"),
+					(c = a.innerText.split("")),
+					setTimeout(function () {
+						a.classList.remove("animating");
+					}, (c.length + 1) * 50),
+					(b = a.dataset.animation),
+					b || (b = "vt-spin"),
+					(a.innerText = ""),
+					c.forEach(function (b) {
+						b == " " && (b = "&nbsp;"), (a.innerHTML += '<span class="letter">' + b + "</span>");
+					}),
+					(d = a.querySelectorAll(".letter")),
+					d.forEach(function (a, c) {
+						setTimeout(function () {
+							a.classList.add(b);
+						}, 50 * c);
+					}));
+			}),
+			a.addEventListener("mouseout", function () {
+				a.classList.remove("mouseover");
+			});
+		});
+	}, 100);
+		/*
+ScrollUp
+====start====
+*/
+	$(window).on("scroll", function() {
+		if ($(this).scrollTop() > 200) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+	$('.scrollup').on("click", function()  {
+		$("html, body").animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+	/*
 
 	/*
 Wow Animation
@@ -346,6 +399,15 @@ Service Scroll
 		.set(el, {transformOrigin: 'top bottom'})
 		.fromTo(el, { x: 0  }, { x: -1200 , duration: 30, immediateRender: false})
 	});
+	jQuery(document).ready(function ($) {
+		$('#pills-tab[data-mouse="hover"] a').hover(function(){
+			$(this).tab('show');
+		});
+		$('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+			var target = $(e.relatedTarget).attr('href');
+			$(target).removeClass('active');
+		})
+	});
 					/*
 Animation
 ====start====
@@ -480,7 +542,55 @@ Animation
 		.set(el, {transformOrigin: 'center center'})
 		.from(el, { opacity: 1,  y: "+=150"}, {opacity: 1, y: 0, duration: 1, immediateRender: false})
 	});
+	gsap.utils.toArray(' .anim_left').forEach((el, index) => { 
+		let tlcta = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 2,
+				start: "top 70%",
+				end: "top 90%",
+				toggleActions: "play none none reverse",
+				markers: false
+			}
+		})
+
+		tlcta
+		.set(el, {transformOrigin: 'center center'})
+		.from(el, { opacity: 1,  x: "+=985"}, {opacity: 1, x: 0, duration: 2, stagger: 0.2, immediateRender: false})
+	});
+	gsap.utils.toArray(' .anim_right').forEach((el, index) => { 
+		let tlcta = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 2,
+				start: "top 90%",
+				end: "top 90%",
+				toggleActions: "play none none reverse",
+				markers: false
+			}
+		})
+
+		tlcta
+		.set(el, {transformOrigin: 'center center'})
+		.from(el, { opacity: 1,  x: "-=985"}, {opacity: 1, x: 0, duration: 2, stagger: 0.2, immediateRender: false})
+	});
 	gsap.utils.toArray(' .top_view').forEach((el, index) => { 
+		let tlcta = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 2,
+				start: "top 90%",
+				end: "top 90%",
+				toggleActions: "play none none reverse",
+				markers: false
+			}
+		})
+
+		tlcta
+		.set(el, {transformOrigin: 'center center'})
+		.from(el, { opacity: 0,  y: "+=30"}, {opacity: 1, y: 0, duration: 1, immediateRender: false})
+	});
+	gsap.utils.toArray(' .appear_left').forEach((el, index) => { 
 		let tlcta = gsap.timeline({
 			scrollTrigger: {
 				trigger: el,
@@ -494,6 +604,40 @@ Animation
 
 		tlcta
 		.set(el, {transformOrigin: 'center center'})
-		.from(el, { opacity: 0,  y: "+=30"}, {opacity: 1, y: 0, duration: 1, immediateRender: false})
+		.from(el, { opacity: 1,  x: "-=250"}, {opacity: 1, x: 0, duration: 1, immediateRender: false})
+	});
+	gsap.utils.toArray(' .vt-about-video').forEach((el, index) => { 
+		let tlcta = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 2,
+				start: "top 50%",
+				end: "top 70%",
+				toggleActions: "play none none reverse",
+				markers: false
+			}
+		})
+
+		tlcta
+		.set(el, {transformOrigin: 'center center'})
+		.from(el, { opacity: 1,  width: "500", borderRadius: 400}, {opacity: 1, width: 1920, borderRadius: 0, duration: 2,stagger: 1, immediateRender: false})
+	});
+	gsap.utils.toArray(".img-parallax").forEach(function(container) {
+		let image = container.querySelector("img");
+
+		let tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: container,
+				scrub: true,
+				pin: false,
+			},
+		}); 
+		tl.from(image, {
+			yPercent: -30,
+			ease: "none",
+		}).to(image, {
+			yPercent: 30,
+			ease: "none",
+		}); 
 	});
 })(jQuery);

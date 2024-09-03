@@ -1,8 +1,27 @@
 .vt-get-in-touch-section {
 	z-index: 1;
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1920px;
 	padding-top: 120px;
 	padding-bottom: 405px;
 	background-color: #fff;
+	.vt-get-in-shape-1,
+	.vt-get-in-shape-2 {
+		width: 50%;
+		z-index: 2;
+		height: 100%;
+		background-color: #fff;
+		@media #{$md,$sm,$xs} { 
+			display: none;
+		}
+	}
+	.vt-get-in-shape-1 {
+		left: -50%;
+	}
+	.vt-get-in-shape-2 {
+		right: -50%;
+	}
 	.vt-section-title {
 		margin: 0 auto;
 		max-width: 510px;

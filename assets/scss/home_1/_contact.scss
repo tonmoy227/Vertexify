@@ -118,19 +118,19 @@
 		}
 	}
 	button {
-		color: #C9F7CA;
 		border: none;
+		border: none;
+		color: #C9F7CA;
 		line-height: 1;
 		font-size: 16px;
 		letter-spacing: 2px;
 		padding: 20px 30px 20px;
 		font-family: var(--vt-heading);
-		text-transform: uppercase;
 		background-color: var(--vt-title-color);
 		transition: all 500ms ease;
 		&:hover {
-			color: #A2A2FC;
-			background-color: #000;
+			color: #fff;
+			background-color: #3533FF;
 		}
 	}
 }
@@ -186,6 +186,9 @@
 		textarea {
 			height: 75px;
 			padding-top: 10px;
+		}
+		&:focus-within .f-lebel {
+			color: #3533FF;
 		}
 	}
 }

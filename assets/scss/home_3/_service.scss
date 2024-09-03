@@ -16,6 +16,12 @@
 		width: 72px;
 		height: 72px;
 		margin-bottom: 85px;
+		svg {
+			path {
+				stroke-dasharray: 2500;
+				stroke-dashoffset: 0;
+			}
+		}
 	}
 	.item-text {
 		.ser_title {
@@ -58,6 +64,11 @@
 			}
 		}
 	}
+	&:hover {
+		.item-icon {
+			animation: icon-bounce 1s ease-out infinite;
+		}
+	}
 }
 .vt-service-section-8 {
 	z-index: 2;
@@ -93,6 +104,10 @@
 			color: var(--vt-title-color);
 			background-color: transparent;
 			border: 2px solid var(--vt-title-color);
+			&:hover {
+				color: #fff;
+				border: 2px solid #3533FF;
+			}
 		}
 	}
 }
@@ -135,6 +150,18 @@
 					top:35px;
 				}
 			}
+			&:after {
+				top: 35px;
+				opacity: 0;
+				right: 50px;
+				font-size: 28px;
+				content: '\f061';
+				position: absolute;
+				font-weight: 300;
+				visibility: hidden;
+				transition: all 500ms ease;
+				font-family: 'Font Awesome 5 Pro';
+			}
 			&:hover {
 				color: #C9F7CA;
 				padding-left: 50px;
@@ -142,6 +169,11 @@
 				&:before {
 					left: 35px;
 					background-color: #C9F7CA;
+				}
+				&:after {
+					opacity: 1;
+					right: 25px;
+					visibility: visible;
 				}
 			}
 		}

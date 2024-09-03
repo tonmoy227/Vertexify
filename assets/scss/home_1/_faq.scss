@@ -87,5 +87,10 @@
 	p {
 		font-size: 23px;
 		font-family: var(--vt-heading);
+		a {
+			&:hover {
+				color: #3533FF;
+			}
+		}
 	}
 }

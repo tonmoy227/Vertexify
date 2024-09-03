@@ -44,6 +44,9 @@
 	}
 }
 .vt-about-video {
+	margin: 0 auto;
+	overflow: hidden;
+	max-width: 1920px;
 	padding: 280px 0px;
 	@media #{$sm,$xs} {
 		padding: 230px 0px;
