@@ -34,6 +34,7 @@
 	}
 }
 .vt-service-item {
+	overflow: hidden;
 	margin-bottom: 32px;
 	padding: 48px 40px 75px;
 	background: linear-gradient(180deg, #CBF3CB 0%, #EDF3CB 100%);
@@ -51,6 +52,13 @@
 		}
 		p {
 			font-size: 16px;
+		}
+	}
+	.vt-vertical-shape-2 {
+		bottom: -12px;
+		height: 40px;
+		span {
+			background-color: #fff;
 		}
 	}
 	&.ver_2 {
@@ -273,10 +281,10 @@
 		display: none;
 	}
 	.swiper-pagination-bullet {
-		width: 8px;
+		width: 6px;
 		opacity: 1;
-		height: 8px;
-		margin: 6px auto;
+		height: 6px;
+		margin: 8px auto;
 		background-color: #D1D1D1;
 		transition: all 500ms ease;
 		border: 2px solid transparent;
@@ -292,19 +300,20 @@
 	overflow: hidden;
 	background-color: var(--vt-gray);
 	.vt-vertical-shape-2 {
-		bottom: 5px;
+		bottom: 10px;
 		span {
 			background-color: #fff;
+			&:nth-child(1) {
+				margin-bottom: 16px;
+			}
 		}
 	}
 }
 .vt-service-content {
 	z-index: 1;
-	margin: 0 auto;
-	max-width: 1440px;
-	padding-right: 10px;
-	@media #{$xxl,$xl,$lg} {
-		padding-right: 25px;
+	padding-right: 25px;
+	@media #{$md,$sm,$xs} {
+		padding-right: 0px;
 	}
 	.vt-service-bg {
 		top: 0;
@@ -326,7 +335,7 @@
 				height: 0%;
 				margin-bottom: 0;
 				margin-right: 6px;
-				background-color: #fff;
+				background-color: var(--vt-gray);
 				transition: all 1000ms ease;
 				&:nth-child(2) {
 					width: 6px;
@@ -380,6 +389,10 @@
 	.vt-section-title {
 		.section_title {
 			font-size: 64px;
+			line-height: 1;
+			.split-line {
+				overflow: visible;
+			}
 			@media #{$md,$sm,$xs} {
 				font-size: 45px;
 			}

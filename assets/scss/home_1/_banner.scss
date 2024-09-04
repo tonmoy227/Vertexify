@@ -11,6 +11,16 @@
 			transform: scale(1.5);
 		}
 	}
+	.vt-vertical-shape-2 {
+		bottom: 0;
+		height: 55px;
+		span {
+			background-color: #fff;
+			&:nth-child(1) {
+				margin-bottom: 16px;
+			}
+		}
+	}
 	.vt-banner-shape {
 		right: 0;
 		bottom: 0px;
@@ -84,7 +94,7 @@
 }
 .vt-banner-text {
 	z-index: 1;
-	max-width: 535px;
+	max-width: 550px;
 	padding-top: 245px;
 	position: relative;
 	padding-bottom: 195px;
@@ -120,9 +130,10 @@
 		}
 	}
 	.banner_title {
-		line-height: 1.15;
+		line-height: 1;
 		font-size: 	64px;
 		overflow: hidden;
+		padding-bottom: 5px;
 		letter-spacing: -2px;
 		color: var(--vt-title-color);
 		@media #{$md} {
@@ -130,6 +141,9 @@
 		}
 		@media #{$xs} {
 			font-size: 45px;
+		}
+		.split-line {
+			overflow: visible;
 		}
 	}
 	p {

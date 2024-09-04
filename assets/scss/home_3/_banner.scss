@@ -33,7 +33,7 @@
 		.banner_heading {
 			z-index: 1;
 			position: relative;
-			padding: 15px 0px;
+			padding: 28px 0px;
 			&:before {
 				top: 0;
 				left: 0;
@@ -46,12 +46,12 @@
 				transition: all 2500ms ease;
 			}
 			.banner_title {
-				line-height: 1.15;
+				line-height: 1;
 				max-width: 488px;
 			}
 		}
 		p {
-			max-width: 520px;
+			max-width: 530px;
 			padding-top: 30px;
 		}
 	}

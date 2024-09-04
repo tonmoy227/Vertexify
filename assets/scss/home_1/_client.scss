@@ -80,8 +80,8 @@
 	}
 	.img_2 {
 		opacity: 0;
-		transform: scale(1) rotate(-180deg);
 		transition: all 500ms ease;
+		transform: translateY(30px);
 	}
 	&:hover {
 		&:before,
@@ -98,11 +98,11 @@
 		}
 		.img_1 {
 			opacity: 0;
-			transform: scale(0) rotate(180deg);
+			transform: translateY(-30px);
 		}
 		.img_2 {
 			opacity: 1;
-			transform: scale(-1) rotate(-180deg);
+			transform: translateY(0px);
 		}
 	}
 }

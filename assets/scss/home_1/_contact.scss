@@ -4,7 +4,7 @@
 	background-color: #E7E7E7;
 	.contact-img {
 		bottom: 0;
-		opacity: .2;
+		opacity: .7;
 		z-index: -1;
 		left: 110px;
 	}
@@ -57,7 +57,11 @@
 			max-width: 100%; 
 		}
 		.section_title {
+			line-height: 1;
 			font-size: 64px;
+			.split-line {
+				overflow: visible;
+			}
 			@media #{$sm,$xs} {
 				font-size: 45px;
 			}

@@ -4,7 +4,7 @@
 	max-width: 1920px;
 	.vt-section-title {
 		margin: 0 auto;
-		max-width: 520px;
+		max-width: 400px;
 	}
 	@media #{$sm,$xs} {
 		padding: 60px 15px;
@@ -83,9 +83,9 @@
 	align-items: center;
 	justify-content: center;
 	.swiper-pagination-bullet {
-		width: 8px;
+		width: 6px;
 		opacity: 1;
-		height: 8px;
+		height: 6px;
 		margin: 6px auto;
 		background-color: #D1D1D1;
 		transition: all 500ms ease;
