@@ -30,7 +30,7 @@
 		right: -80px;
 	}
 	.vt-section-title {
-		max-width: 696px;
+		max-width: 646px;
 	}
 }
 .vt-service-item {
@@ -78,8 +78,20 @@
 	max-width: 1920px;
 	.vt-vertical-shape-2 { 
 		z-index: 2;
+		@media #{$md,$sm,$xs} {
+			display: none;
+		}
 		span {
 			background-color: #F6F6F6;
+			&:nth-child(1) {
+				height: 4px;
+			}
+			&:nth-child(2) {
+				height: 8px;
+			}
+			&:nth-child(3) {
+				height: 12px;
+			}
 		}
 	}
 }

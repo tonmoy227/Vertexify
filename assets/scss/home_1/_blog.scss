@@ -2,9 +2,12 @@
 	overflow: hidden;
 	background-color: #E7E7E7;
 	.vt-vertical-shape-2 {
-		bottom: 5px;
+		bottom: 8px;
 		span {
 			background-color: #fff;
+			&:nth-child(1) {
+				margin-bottom: 14px;
+			}
 		}
 	}
 }

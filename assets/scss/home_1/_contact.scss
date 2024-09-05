@@ -23,9 +23,12 @@
 		}
 	}
 	.vt-vertical-shape-2 {
-		bottom: 5px;
+		bottom: 7px;
 		span {
 			background-color: #fff;
+			&:nth-child(1) {
+				margin-bottom: 14px;
+			}
 		}
 	}
 	&.section_border_radius {

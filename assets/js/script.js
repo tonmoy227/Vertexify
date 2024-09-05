@@ -205,8 +205,8 @@ Header Area
 		$('.overlay').removeClass('active');
 	});
 	$('.vartcal_toggle').on('click', function(){
-        $('.vt-vertical-menu').toggleClass("active");
-    });
+		$('.vt-vertical-menu').toggleClass("active");
+	});
 	$(document).on('keydown', function(event) {
 		if (event.key === 'Escape') {
 			$('.search_box_active').removeClass('active');
@@ -223,16 +223,40 @@ Service Slider
 		slidesPerView: 6,
 		freeMode: true,
 		direction: 'vertical',
+		mousewheel: true,
+		speed: 1000,
 		watchSlidesProgress: true,
 		pagination: {
 			el: ".vt-service-pagination",
 			clickable: true,
 		},
+		breakpoints: {  
+			'991': {
+				mousewheel: false,
+			},
+			'768': {
+				mousewheel: false,
+			},
+			'767': {
+				mousewheel: false,
+			},
+			'576': {
+				mousewheel: false,
+			},
+			'480': {
+				mousewheel: false,
+			},
+			'0': {
+				mousewheel: false,
+			},
+		},
 	});
 	var swiper2 = new Swiper(".vt-service-slider", {
 		slidesPerView: 1,
 		spaceBetween: 10,
-		effect: "fade",
+		mousewheel: true,
+		effect: 'fade',
+		speed: 1000,
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -243,6 +267,26 @@ Service Slider
 		pagination: {
 			el: ".vt-service-pagination",
 			clickable: true,
+		},
+		breakpoints: {  
+			'991': {
+				mousewheel: false,
+			},
+			'768': {
+				mousewheel: false,
+			},
+			'767': {
+				mousewheel: false,
+			},
+			'576': {
+				mousewheel: false,
+			},
+			'480': {
+				mousewheel: false,
+			},
+			'0': {
+				mousewheel: false,
+			},
 		},
 	});
 			/*
