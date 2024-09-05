@@ -1835,7 +1835,7 @@ select:visited {
 .vt-section-title .section_title {
   font-size: 45px;
   font-weight: 500;
-  line-height: 1.15;
+  line-height: 1.07;
   letter-spacing: -2px;
   color: var(--vt-title-color);
 }
@@ -1848,6 +1848,9 @@ select:visited {
   .vt-section-title .section_title {
     font-size: 30px;
   }
+}
+.vt-section-title .section_title .split-line {
+  overflow: visible;
 }
 .vt-section-title p {
   padding-top: 25px;
@@ -5148,7 +5151,7 @@ select:visited {
 /*Service Section*/
 /*----------------------------------------------------*/
 .vt-service-top-content .vt-section-title {
-  max-width: 590px;
+  max-width: 585px;
 }
 
 /*---------------Service 4-----------------------*/
@@ -5369,6 +5372,15 @@ select:visited {
 }
 .vt-ser-img .vt-vertical-shape-2 span {
   background-color: #E7E7E7;
+}
+.vt-ser-img .vt-vertical-shape-2 span:nth-child(1) {
+  height: 16px;
+}
+.vt-ser-img .vt-vertical-shape-2 span:nth-child(2) {
+  height: 8px;
+}
+.vt-ser-img .vt-vertical-shape-2 span:nth-child(3) {
+  height: 4px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .vt-ser-img {

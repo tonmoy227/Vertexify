@@ -1,6 +1,6 @@
 .vt-service-top-content {
 	.vt-section-title {
-		max-width: 590px;
+		max-width: 585px;
 	}
 }
 /*---------------Service 4-----------------------*/
@@ -189,6 +189,15 @@
 		background-color: #fff;
 		span {
 			background-color: #E7E7E7;
+			&:nth-child(1) {
+				height: 16px;
+			}
+			&:nth-child(2) {
+				height: 8px;
+			}
+			&:nth-child(3) {
+				height: 4px;
+			}
 		}
 	}
 	@media #{$md,$sm,$xs} {

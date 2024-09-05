@@ -358,7 +358,7 @@ select:visited {
 	.section_title {
 		font-size: 45px;
 		font-weight: 500;
-		line-height: 1.15;
+		line-height: 1.07;
 		letter-spacing: -2px;
 		color: var(--vt-title-color);
 		@media #{$md,$sm,$xs} {
@@ -366,6 +366,9 @@ select:visited {
 		}
 		@media #{$xxs} {
 			font-size: 30px;
+		}
+		.split-line {
+			overflow: visible;
 		}
 	}
 	p {
