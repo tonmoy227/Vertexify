@@ -3258,12 +3258,21 @@ select:visited {
 .vt-banner-section {
   overflow: hidden;
 }
+.vt-banner-section.video_bg:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .vt-banner-section .bt-banner-img {
   width: 100%;
   z-index: -1;
   height: 100%;
 }
-.vt-banner-section .bt-banner-img img {
+.vt-banner-section .bt-banner-img img, .vt-banner-section .bt-banner-img video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
