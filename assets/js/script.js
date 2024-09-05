@@ -204,7 +204,9 @@ Header Area
 		$('.search_box_active').removeClass('active');
 		$('.overlay').removeClass('active');
 	});
-
+	$('.vartcal_toggle').on('click', function(){
+        $('.vt-vertical-menu').toggleClass("active");
+    });
 	$(document).on('keydown', function(event) {
 		if (event.key === 'Escape') {
 			$('.search_box_active').removeClass('active');

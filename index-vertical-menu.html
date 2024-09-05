@@ -29,39 +29,56 @@
 
 <!-- Start of Header section
 	============================================= --> 
-	<header id="vt-header" class="vt-header-section header_style_one txa_sticky_header">
-		<div class="header-top-area">
+	<header id="vt-header" class="vt-header-section lenis lenis-smooth vertical_version">
+		<div class="vt-vertical-menu-toggle-wrap">
 			<div class="container">
-				<div class="header-top d-flex justify-content-between">
-					<div class="top-cta d-flex align-items-center">
-						<i class="far fa-phone"></i> <span>Have any questions? Free: <a href="#">+1 917 2658444</a></span>
+				<div class="vt-vertical-menu-toggle d-flex justify-content-between">
+					<div class="brand-logo">
+						<a href="#"><img src="assets/img/logo/logo-1.svg" alt=""></a>
 					</div>
-					<div class="top-action d-flex align-items-center">
-						<div class="header-search search_btn_toggle">
-							<span>Search...</span>
-						</div>
-						<div class="action-text">
-							<a href="#"><span>Join Us</span> to shape the future <i class="far fa-arrow-right"></i></a>
-						</div>
-						<div class="action-social">
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-linkedin-in"></i></a>
-							<a href="#"><i class="fab fa-dribbble"></i></a>
-						</div>
-					</div>
+					<button class="mobile-menu-btn mobile_menu_button vartcal_toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
 			</div>
 		</div>
-		<div class="vt-header-navigation-content">
-			<div class="container">
-				<div class="vt-header-navigation d-flex align-items-center justify-content-between">
-					<div class="brand-logo">
-						<a href="#"><img src="assets/img/logo/logo-1.svg" alt=""></a> 
-					</div>
-					<div class="main-navigation-cta d-flex align-items-center ">
-						<nav class="main-navigation clearfix ul-li">
-							<ul id="main-nav" class="nav navbar-nav clearfix">
+		<div class="vt-vertical-menu">
+			<div class="header-cta-offcanvas d-flex justify-content-between align-items-center">
+				<div class="top-cta d-flex align-items-center">
+					<i class="far fa-phone"></i> <span>Have any questions? Free: <a href="#">+1 917 2658444</a></span>
+				</div>
+				<div class="off-canvas-btn d-flex align-items-center justify-content-center">
+					<button class="canvas-trigger offcanvas_toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<button class="menu-close vartcal_toggle">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+			</div>
+			<div class="vt-vertical-menu-search">
+				<form action="#">
+					<input type="text" name="search" placeholder="Search...">
+				</form>
+			</div>
+			<div class="brand-logo">
+				<a href="#"><img src="assets/img/logo/logo-1.svg" alt=""></a>
+			</div>
+			<div class="mobile_menu  position-relative">
+				<div class="mobile_menu_wrap">
+					<div class="mobile_menu_content lenis lenis-smooth">
+						<nav class="mobile-main-navigation  clearfix ul-li">
+							<ul id="m-main-nav" class="nav navbar-nav clearfix">
 								<li class="dropdown active">
 									<a href="!#">Home</a>
 									<ul class="dropdown-menu clearfix">
@@ -107,6 +124,11 @@
 										<li><a href="testimonial.html">Testimonial Page</a></li>
 										<li><a href="contact.html">Contact Page</a></li>
 										<li><a href="booking.html">Booking Page</a></li>
+										<li><a href="faq.html">FAQ Page</a></li>
+										<li><a href="pricing.html">Pricing Page</a></li>
+										<li><a href="testimonial.html">Testimonial Page</a></li>
+										<li><a href="contact.html">Contact Page</a></li>
+										<li><a href="booking.html">Booking Page</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
@@ -119,118 +141,25 @@
 								<li><a href="about.html">Contact</a></li>
 							</ul>
 						</nav>
-						<div class="header-cta-btn">
-							<a href="#">Free Consultation</a>
-						</div>
-						<div class="off-canvas-btn d-flex align-items-center justify-content-center">
-							<button class="canvas-trigger offcanvas_toggle">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-						<button class="mobile-menu-btn mobile_menu_button open_mobile_menu">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- Mobile Menu -->
-	<div class="mobile_menu lenis lenis-smooth position-relative">
-		<div class="mobile_menu_wrap">
-			<div class="mobile_menu_overlay open_mobile_menu"></div>
-			<div class="mobile_menu_content">
-				<div class="mobile_menu_close open_mobile_menu">
-					<i class="fal fa-times"></i>
-				</div>
-				<div class="m-brand-logo">
-					<a href="#"><img src="assets/img/logo/logo-2.svg" alt=""></a> 
-				</div>
-				<div class="mobile-search-bar position-relative">
-					<form action="#">
-						<input type="text" name="search" placeholder="Keywords">
-						<button><i class="fal fa-search"></i></button>
-					</form>
-				</div>
-				<nav class="mobile-main-navigation  clearfix ul-li">
-					<ul id="m-main-nav" class="nav navbar-nav clearfix">
-						<li class="dropdown active">
-							<a href="!#">Home</a>
-							<ul class="dropdown-menu clearfix">
-								<li><a class="active" href="index.html">Corporate Business</a></li>
-								<li><a href="index-2.html">Corporate Business Dark</a></li>
-								<li><a href="index-3.html">Corporate Business Modern</a></li>
-								<li><a href="index-4.html">Trendy Business</a></li>
-								<li><a href="index-5.html">Business Classic</a></li>
-								<li><a href="index-6.html">Business Consulting</a></li>
-							</ul>
-						</li>
-						<li><a href="about.html">Solutions</a></li>
-						<li><a href="about.html">About</a></li>
-						<li class="dropdown">
-							<a href="!#">Pages</a>
-							<ul class="dropdown-menu clearfix">
-								<li><a href="service.html">Services</a></li>
-								<li class="dropdown">
-									<a href="service-single.html">Services Details</a>
-									<ul class="dropdown-menu clearfix">
-										<li><a href="service-single.html">Construction </a></li>
-										<li><a href="service-single-2.html">Architect Design</a></li>
-										<li><a href="service-single-3.html">Interior Design</a></li>
-										<li><a href="service-single-4.html">3D Animation</a></li>
-										<li><a href="service-single-5.html">House Renovation</a></li>
-										<li><a href="service-single-6.html">Ideas & Inspiration</a></li>
-									</ul>
-								</li>
-								<li><a href="team.html">Team Page</a></li>
-								<li class="dropdown">
-									<a href="service-single.html">Blog</a>
-									<ul class="dropdown-menu clearfix">
-										<li><a href="service-single.html">Construction</a></li>
-										<li><a href="service-single-2.html">Architect Design</a></li>
-										<li><a href="service-single-3.html">Interior Design</a></li>
-										<li><a href="service-single-4.html">3D Animation</a></li>
-										<li><a href="service-single-5.html">House Renovation</a></li>
-										<li><a href="service-single-6.html">Ideas & Inspiration</a></li>
-									</ul>
-								</li>
-								<li><a href="faq.html">FAQ Page</a></li>
-								<li><a href="pricing.html">Pricing Page</a></li>
-								<li><a href="testimonial.html">Testimonial Page</a></li>
-								<li><a href="contact.html">Contact Page</a></li>
-								<li><a href="booking.html">Booking Page</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="!#">Shop</a>
-							<ul class="dropdown-menu clearfix"> 
-								<li><a href="shop.html">Shop Page </a></li>
-								<li><a href="shop-single.html">Shop Details</a></li>
-							</ul>
-						</li>
-						<li><a href="about.html">Contact</a></li>
-					</ul>
-				</nav>
-				<div class="ptx-mobile-header-social text-center">
-					<a href="#"> <i class="fab fa-instagram"></i></a>
-					<a href="#"> <i class="fab fa-linkedin-in"></i></a>
-					<a href="#"> <i class="fab fa-facebook"></i></a>
-					<a href="#"> <i class="fab fa-youtube"></i></a>
+			<div class="vt-cta-btn">
+				<div class="vt-btn ver_2 btn-spin mt-15">
+					<a href="#">Free Consultation</a>
 				</div>
 			</div>
+			<div class="action-text">
+				<a href="#"><span>Join Us</span> to shape the future <i class="far fa-arrow-right"></i></a>
+			</div>
+			<div class="action-social">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				<a href="#"><i class="fab fa-dribbble"></i></a>
+			</div>
 		</div>
-		<!-- /Mobile-Menu -->
-	</div>
+	</header>
 	<!-- offcanvas-start -->
 	<div class="txa-offcanvas-box lenis lenis-smooth offcanvas_box_active">
 		<button class="txa-offcanvas-box-close offcanvas_box_close" aria-label="name" >
@@ -503,39 +432,13 @@
 			</div>
 		</div>
 	</div>
-	<!-- search-popup -->
-	<div class="txa-search-box search_box_active ">
-
-		<div class="txa-search-container">
-			<div class="txa-search-wrap text-center mb-55">
-				<h5 class="txa-search-title fx-heading-1 fx-font-500">Search</h5>
-				<form action="#" class="txa-search-form">
-					<input class="txa-search-form-input" type="text" placeholder="What are you looking for?...">
-				</form>
-			</div>
-
-			<div class="txa-search-tag-wrap text-center">
-				<h6 class="txa-search-tag-title fx-font-400 fx-heading-1">People also search for:</h6>
-				<div class="txa-search-tag d-inline-flex flex-wrap  ">
-					<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Corporate</a>
-					<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Business</a>
-					<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Consulting</a>
-					<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Finance</a>
-					<a href="#" aria-label="name" class="txa-search-tag-item fx-heading-1 fx-font-500" >Reports</a>
-				</div>
-			</div>
-		</div>
-
-		<button aria-label="search-close" type="button" class="txa-search-box-close search_box_close">
-			<i class="fa-solid fa-xmark"></i>
-		</button>
-	</div>
 <!-- Start of Header section
 	============================================= -->
 
+	<main class="vt-vertical-nav">
 <!-- Start of Banner section
 	============================================= -->
-	<section id="vt-banner" class="vt-banner-section txt_item_active position-relative">
+	<section id="vt-banner" class="vt-banner-section txt_item_active vertical_top position-relative">
 		<div class="vt-vertical-shape-2 txt_item_active">
 			<span></span>
 			<span></span>
@@ -1678,31 +1581,31 @@
 <!-- End of footer  section
 	============================================= -->			
 
+</main>
 
 
 
-
-	<!-- For Js Library -->
-	<script src="assets/js/jquery-3.7.0.min.js"></script>
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/swiper-bundle.min.js"></script>
-	<script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/appear.js"></script>
-	<script src="assets/js/gsap.min.js"></script>
-	<script src="assets/js/knob.js"></script>
-	<script src="assets/js/jqueryui.js"></script>
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/jquery.marquee.min.js"></script>
-	<script src="assets/js/jquery.inputarrow.js"></script>
-	<script src="assets/js/isotope.pkgd.min.js"></script>
-	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/js/masonry.pkgd.min.js"></script>
-	<script src="assets/js/jquery.counterup.min.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/lenis.min.js"></script>
-	<script src="assets/js/split-type.min.js"></script>
-	<script src="assets/js/ScrollTrigger.min.js"></script>
-	<script src="assets/js/SplitText.min.js"></script>
-	<script src="assets/js/script.js"></script>
+<!-- For Js Library -->
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/knob.js"></script>
+<script src="assets/js/jqueryui.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.marquee.min.js"></script>
+<script src="assets/js/jquery.inputarrow.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
+<script src="assets/js/split-type.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
+<script src="assets/js/SplitText.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>  

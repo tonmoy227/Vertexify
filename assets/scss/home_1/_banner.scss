@@ -48,6 +48,11 @@
 			height: 100%;
 		}
 	}
+	&.vertical_top {
+		&:before {
+			top: 0;
+		}
+	}
 	&.dark_version {
 		&:before {
 			background: linear-gradient(180deg, #101010 0%, rgba(16, 16, 16, 0) 100%);
