@@ -1058,7 +1058,8 @@ Font load
   font-weight: 400;
 }
 .txa-offcanvas-box-close:hover {
-  background: var(--vt-base-color-1);
+  color: #fff;
+  background: #3533FF;
 }
 .txa-offcanvas-box-container {
   padding: 80px;
@@ -1205,7 +1206,7 @@ Font load
   transition: all 0.3s ease-in-out;
 }
 .txa-offcanvas-contact li a:hover {
-  color: var(--vt-base-color-1);
+  color: #3533FF;
 }
 .txa-offcanvas-social li {
   overflow: hidden;
@@ -3648,6 +3649,9 @@ select:visited {
     font-size: 45px;
   }
 }
+.vt-service-item-2 .item-text .vt-section-title .section_title .split-line {
+  overflow: hidden;
+}
 .vt-service-item-2 .item-text .vt-section-title .section_title .split-line div {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -4850,10 +4854,10 @@ select:visited {
   background-color: #E7E7E7;
 }
 .vt-contact-section .contact-img {
-  bottom: 0;
   opacity: 0.7;
   z-index: -1;
   left: 110px;
+  bottom: 48px;
 }
 .vt-contact-section .contact-pattern {
   left: 0;
@@ -5100,8 +5104,8 @@ select:visited {
   margin: 0 auto;
   overflow: hidden;
   max-width: 1920px;
-  padding-top: 120px;
-  padding-bottom: 405px;
+  padding-top: 115px;
+  padding-bottom: 408px;
   background-color: #fff;
 }
 .vt-get-in-touch-section .vt-get-in-shape-1,
@@ -5502,6 +5506,9 @@ select:visited {
   letter-spacing: -2px;
   color: var(--vt-title-color);
 }
+.vt-about-title .ab_title .split-line {
+  overflow: visible;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .vt-about-title .ab_title {
     font-size: 45px;
@@ -5644,7 +5651,7 @@ select:visited {
 
 .vt-testi-slider-nav-2 {
   z-index: 1;
-  margin-top: 48px;
+  margin-top: 5px;
 }
 .vt-testi-slider-nav-2:before {
   z-index: -1;

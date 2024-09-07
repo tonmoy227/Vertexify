@@ -61,7 +61,8 @@
       }
 
       &:hover {
-        background: var(--vt-base-color-1);
+        color: #fff;
+        background: #3533FF;
       }
     }
 
@@ -184,7 +185,7 @@
         transition: all .3s ease-in-out;
 
         &:hover {
-          color: var(--vt-base-color-1);
+          color: #3533FF;
         }
       } 
     

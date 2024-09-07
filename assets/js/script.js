@@ -230,26 +230,7 @@ Service Slider
 			el: ".vt-service-pagination",
 			clickable: true,
 		},
-		breakpoints: {  
-			'991': {
-				mousewheel: false,
-			},
-			'768': {
-				mousewheel: false,
-			},
-			'767': {
-				mousewheel: false,
-			},
-			'576': {
-				mousewheel: false,
-			},
-			'480': {
-				mousewheel: false,
-			},
-			'0': {
-				mousewheel: false,
-			},
-		},
+
 	});
 	var swiper2 = new Swiper(".vt-service-slider", {
 		slidesPerView: 1,
@@ -268,26 +249,7 @@ Service Slider
 			el: ".vt-service-pagination",
 			clickable: true,
 		},
-		breakpoints: {  
-			'991': {
-				mousewheel: false,
-			},
-			'768': {
-				mousewheel: false,
-			},
-			'767': {
-				mousewheel: false,
-			},
-			'576': {
-				mousewheel: false,
-			},
-			'480': {
-				mousewheel: false,
-			},
-			'0': {
-				mousewheel: false,
-			},
-		},
+
 	});
 			/*
 Service Slider 2

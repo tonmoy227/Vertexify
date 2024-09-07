@@ -141,6 +141,7 @@
 					font-size: 45px;
 				}
 				.split-line {
+					overflow: hidden;
 					div {
 						transform: translateY(100%);
 						transition: all 700ms ease;

@@ -26,6 +26,9 @@
 		line-height: 1.06;
 		letter-spacing: -2px;
 		color: var(--vt-title-color);
+		.split-line {
+			overflow: visible;
+		}
 		@media #{$md,$sm,$xs} {
 			font-size: 45px;
 		}
