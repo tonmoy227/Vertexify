@@ -123,4 +123,16 @@
 		padding: 290px 0px;
 		border-radius: 24px;
 	}
+	.vt-vertical-shape-2 {
+		bottom: 0;
+		height: 50px;
+		background-color: #D1D1D1;
+		span {
+			margin-bottom: 8px;
+			background-color: #fff;
+			&:nth-child(1) {
+				margin-bottom: 14px;
+			}
+		}
+	}
 }

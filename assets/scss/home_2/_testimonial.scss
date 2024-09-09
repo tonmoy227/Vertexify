@@ -23,10 +23,16 @@
 	@media #{$sm,$xs} {
 		padding-top: 40px;
 	}
+	&.ver_2 {
+		padding-top: 50px;
+	}
 }
 .vt-testimonial-content-2 {
 	margin: 0 auto;
 	max-width: 800px;
+}
+.vt-testimonial-title {
+	border-bottom: 1px solid #DFE1E5;
 }
 .vt-testi-slider-nav-2 {
 	z-index: 1;
@@ -50,6 +56,14 @@
 		&:hover {
 			background-color: #C9F7CA;
 			border: 1px solid #C9F7CA;
+		}
+		&.ver_2 {
+			border-radius: 100%;
+			&:hover {
+				color: var(--vt-title-color);
+				background-color: #fff;
+				border: 1px solid var(--vt-title-color);
+			}
 		}
 	}
 	.vt-testi-pagination-2 {

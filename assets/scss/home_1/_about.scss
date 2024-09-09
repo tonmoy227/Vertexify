@@ -5,12 +5,26 @@
 		flex-wrap: wrap;
 		justify-content: center !important;
 	}
+	&.page_version {
+		max-width: 100%;
+		.vt-about-counter {
+			&:before {
+				display: none;
+			}
+		}
+		.vt-about-text-wrap {
+			max-width: 800px;
+		}
+	}
 }
 .vt-about-text-wrap {
 	max-width: 780px;
 	.vt-section-title {
 		.section_title {
 			max-width: 635px;
+		}
+		p {
+			padding-top: 40px;
 		}
 	}
 }
