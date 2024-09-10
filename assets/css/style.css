@@ -7106,6 +7106,19 @@ select:visited {
   }
 }
 
+.vt-team-cta-content {
+  margin: 0 auto;
+  max-width: 592px;
+}
+.vt-team-cta-content .vt-section-title .subtitle {
+  background-color: #fff;
+}
+.vt-team-cta-content .vt-section-title .section_title {
+  margin: 0 auto;
+  font-size: 32px;
+  max-width: 535px;
+}
+
 /*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
