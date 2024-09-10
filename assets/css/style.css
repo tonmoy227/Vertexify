@@ -7120,6 +7120,83 @@ select:visited {
 }
 
 /*---------------------------------------------------- */
+/*Team Details Page*/
+/*----------------------------------------------------*/
+.vt-go-back {
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+.vt-go-back .go-back-btn a {
+  color: #3533FF;
+  font-size: 15px;
+  font-family: var(--vt-heading);
+}
+.vt-go-back .go-back-btn a i {
+  margin-right: 8px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.vt-go-back .go-back-btn a:hover i {
+  margin-right: 10px;
+}
+
+.vt-team-detail-content {
+  gap: 30px 48px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-team-detail-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.vt-team-detail-img {
+  width: 100%;
+  max-width: 384px;
+}
+
+.vt-team-detail-text {
+  max-width: 592px;
+}
+.vt-team-detail-text .name-degi {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--vt-title-color);
+}
+.vt-team-detail-text .name-degi h3 {
+  line-height: 1;
+  font-size: 45px;
+  padding-bottom: 10px;
+  letter-spacing: -2px;
+  color: var(--vt-title-color);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .vt-team-detail-text .name-degi h3 {
+    font-size: 30px;
+  }
+}
+.vt-team-detail-text .name-degi span {
+  color: #6D6D6D;
+}
+.vt-team-detail-text .team-social {
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+.vt-team-detail-text .team-social a {
+  margin-right: 20px;
+  color: var(--vt-title-color);
+}
+.vt-team-detail-text .team-social a:hover {
+  color: #3533FF;
+}
+.vt-team-detail-text .team-desc p {
+  padding-bottom: 30px;
+}
+
+/*---------------------------------------------------- */
 /*Footer Section*/
 /*----------------------------------------------------*/
 @-webkit-keyframes txt_icon_shake {
