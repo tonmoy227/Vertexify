@@ -1,0 +1,60 @@
+.vt-award-section {
+	.vt-section-title {
+		max-width: 800px;
+		.section_title {
+			max-width: 592px;
+		}
+	}
+}
+.vt-award-item {
+	margin-bottom: 70px;
+	.item-img {
+		margin-bottom: 20px;
+	}
+	.item-text {
+		h3 {
+			font-size: 23px;
+			padding-bottom: 10px;
+			color: var(--vt-title-color);
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+}
+.vt-award-content {
+	.vt-btn {
+		a {
+			padding: 15px 110px;
+			background-color: #fff;
+			@media #{$md,$sm,$xs} {
+				padding: 15px 30px;
+			}
+		}
+	}
+}
+.vt-award-feed-section {
+	.vt-section-title {
+		max-width: 800px;
+		.section_title {
+			max-width: 702px;
+		}
+	}
+}
+.vt-award-item-2 {
+	margin-bottom: 75px;
+	.item-img {
+		margin-bottom: 20px;
+	}
+	.item-text {
+		h3 {
+			font-size: 23px;
+			padding-bottom: 8px;
+			color: var(--vt-title-color);
+		}
+		p {
+			color: #6D6D6D;
+			font-size: 18px;
+		}
+	}
+}
