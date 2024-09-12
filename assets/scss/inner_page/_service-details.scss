@@ -1,0 +1,35 @@
+.vt-item-details-top-text {
+	.vt-section-title {
+		max-width: 596px;
+	}
+	.item-top-text {
+		max-width: 488px;
+		padding-top: 28px;
+	}
+}
+.vt-about-counter-2 {
+	&.page_ver {
+		padding: 52px 0px 56px;
+		border-top: 1px solid #D9D9D9;
+		border-bottom: 1px solid #D9D9D9;
+	}
+}
+.vt-ser-det-item {
+	max-width: 520px;
+	margin-bottom: 52px;
+	.item-icon {
+		width: 48px;
+		height: 48px;
+		margin-right: 24px;
+	}
+	.item-text {
+		h3 {
+			font-size: 23px;
+			padding-bottom: 12px;
+			color: var(--vt-title-color);
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+}
