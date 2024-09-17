@@ -226,11 +226,17 @@
 			color: #000000;
 			margin-right: 65px;
 			background-color: #F6F6F6;
+			@media #{$sm,$xs} {
+				margin-right: 0;
+			}
 		}
 		.item-arrow {
 			opacity: 1;
 			right: 10px;
 			visibility: visible;
+			@media #{$sm,$xs} {
+				display: none;
+			}
 		}
 	}
 }

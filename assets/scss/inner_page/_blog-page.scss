@@ -126,6 +126,9 @@
 .vt-blog-newslatter {
 	padding: 75px 80px;
 	background-color: #C9F7CA;
+	@media #{$md,$sm,$xs}{
+		padding: 40px 20px;
+	}
 	.newsletter-img-text {
 		max-width: 568px;
 	}
@@ -136,6 +139,12 @@
 			font-size: 45px;
 			padding-bottom: 12px;
 			color: var(--vt-title-color);
+			@media #{$md,$sm,$xs} {
+				font-size: 35px;
+			}
+			@media #{$xxs} {
+				font-size: 30px;
+			}
 		}
 		p {
 			color: #4F4F4F;

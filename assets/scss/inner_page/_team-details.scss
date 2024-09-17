@@ -1,6 +1,9 @@
 .vt-go-back {
 	padding-top: 180px;
 	padding-bottom: 50px;
+	&.ver_2 {
+		padding-bottom: 0;
+	}
 	.go-back-btn {
 		a {
 			color: #3533FF;

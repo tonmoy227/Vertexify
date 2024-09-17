@@ -26,6 +26,17 @@
 		margin: 0 auto;
 		max-width: 510px;
 	}
+	.contact-pattern {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 436px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 }
 .vt-get-in-touch-content {
 	gap: 30px 80px;

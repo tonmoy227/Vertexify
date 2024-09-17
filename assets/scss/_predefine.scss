@@ -413,23 +413,25 @@ select:visited {
 }
 .vt-pagination {
 	ul {
-		display: flex;
-		justify-content: center;
+		padding: 8px;
+		display: inline-block;
+		background-color: #E7E7E7;
 	}
 	li {
-		width: 59px;
-		height: 59px;
-		display: flex !important;
-		align-items: center;
-		justify-content: center;
-		background-color: #E7E7E7;
+		margin: 2px 1px;
 		a {
 			width: 43px;
 			height: 43px;
 			display: flex;
+			font-size: 15px;
 			align-items: center;
 			background-color: #fff;
 			justify-content: center;
+			font-family: var(--vt-heading);
+			&:hover {
+				color: var(--vt-base-color-1);
+				background-color: var(--vt-title-color);
+			}
 		}
 	}
 }

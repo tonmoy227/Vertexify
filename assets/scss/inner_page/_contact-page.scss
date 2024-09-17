@@ -1,0 +1,68 @@
+.vt-google-map-section {
+	z-index: 1;
+	overflow: hidden;
+	filter: grayscale(1);
+	.vt-vertical-shape-2 {
+		bottom: 10px;
+		span {
+			background-color: #fff;
+			&:nth-child(1) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	&:after {
+		left: 0;
+		top: 40px;
+		z-index: 1;
+		width: 100%;
+		content: '';
+		height: 200px;
+		position: absolute;
+		background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		@media #{$md,$sm,$xs} {
+			top: 0;
+			height: 100%;
+		}
+	}
+}
+.vt-contact-text-wrap {
+	&.page_version {
+		.vt-section-title {
+			max-width: 384px;
+			@media #{$md,$sm,$xs} {
+				max-width: 100%; 
+			}
+			.section_title {
+				line-height: 1;
+				font-size: 45px;
+				.split-line {
+					overflow: visible;
+				}
+				@media #{$sm,$xs} {
+					font-size: 45px;
+				}
+			}
+		}
+	}
+}
+.vt-contact-form {
+	&.page_version {
+		background-color: transparent;
+		.vt-contact-form-option {
+			margin-bottom: 46px;
+		}
+		h3 {
+			color: var(--vt-title-color);
+		}
+		.vt-contact-form-area .contact-select span {
+			background-color: #F5F5F3;
+		}
+		.vt-contact-form-input .input-field label {
+			color: var(--vt-title-color);
+		}
+		.vt-contact-form-area .contact-select {
+			margin: 1px 1px;
+		}
+	}
+}

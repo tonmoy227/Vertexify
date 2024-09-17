@@ -1,4 +1,12 @@
 .about-gallery-img {
+	@media #{$sm,$xs} { 
+		height: 320px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 	img {
 		transition: all 500ms ease;
 	}
@@ -44,11 +52,20 @@
 			filter: grayscale(1);
 			transition: all 500ms ease;
 		}
+		@media #{$md,$sm,$xs} { 
+			height: 320px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
 	}
 	.item-text {
 		opacity: 0;
 		left: 30px;
 		bottom: 12px;
+		width: 100%;
 		max-width: 360px;
 		padding: 28px 32px;
 		visibility: hidden;
@@ -80,6 +97,7 @@
 	}
 }
 .vt-gallery-grid-section {
+	overflow: hidden;
 	.vt-section-title {
 		max-width: 696px;
 	}

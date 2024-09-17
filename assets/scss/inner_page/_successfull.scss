@@ -1,0 +1,22 @@
+.vt-successfull-content {
+	padding: 250px 0px 150px;
+	.item-img {
+		margin-bottom: 24px;
+		img {
+			filter: grayscale(1);
+		}
+	}
+	.item-text {
+		margin: 0 auto;
+		max-width: 500px;
+		h3 {
+			font-size: 32px;
+			padding-bottom: 10px;
+			color: var(--vt-title-color);
+		}
+		p {
+			font-size: 18px;
+			padding-bottom: 24px;
+		}
+	}
+}
